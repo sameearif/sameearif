@@ -21,14 +21,14 @@ function App() {
       </div>
 
       <div className='bio'>
-        <span>I am a Research Associate at <a className='inplace' href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>, working under the supervision of <a className='inplace' href="https://aghaaliraza.com/" target="_blank">Dr. Agha Ali Raza</a>, <a className='inplace' href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>, and <a className='inplace' href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a>. In addition, I have the privilege of collaborating with <a className='inplace' href="https://cl.awaisathar.com/" target="_blank">Dr. Awais Athar</a> at  <a className='inplace' href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a> University of Cambridge. I am also an active member of the <a className='inplace' href="https://www.c-salt.org/" target="_blank">Center for Speech and Language Technologies</a> (LUMS) and <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>, contributing to innovative research in the field. I completed my Bachelor of Science in Computer Science from LUMS, graduating in 2023.</span>
+        <span>I am a Research Associate at <a className='inplace' href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>. I completed my Bachelor of Science in Computer Science in 2023 from LUMS. My research focusses on Information & Communication Technologies for Development, Human-Computer Interaction, and Speech and Natural Language Processing. I am committed to leveraging these fields to create meaningful social impacts, particularly by enhancing accessibility and usability of technology.</span>
+        <br></br>
+        <span>During my undergraduate I worked under the supervision of <a className='inplace' href="https://aghaaliraza.com/" target="_blank">Dr. Agha Ali Raza</a>. Currently I am working with Dr. Raza, <a className='inplace' href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>, and <a className='inplace' href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a>. In addition, I have the privilege of collaborating with <a className='inplace' href="https://cl.awaisathar.com/" target="_blank">Dr. Awais Athar</a> (<a className='inplace' href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a>, University of Cambridge). I am also an active member of the <a className='inplace' href="https://www.c-salt.org/" target="_blank">Center for Speech and Language Technologies</a> (LUMS) and <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>, contributing to innovative research in the field.</span>
       </div>
 
       <div className='research'>
         <div className='heading'>Research</div>
-        <span>My research focusses on Information & Communication Technologies for Development, Human-Computer Interaction, and Speech and Natural Language Processing. I am committed to leveraging these fields to create meaningful social impacts, particularly by enhancing accessibility and usability of technology.</span>
-        <br></br>
-        <span>During my undergraduate, I worked on:</span>
+        <span>My research has focused on:</span>
         <ol>
           <li><b>Urdu Question-Answering System</b> to make healthcare and educational resources accessible to Urdu-speaking communities. The research paper for this project will appear at LREC-Coling 2024.</li>
           <li><b>Multimodal Language Models</b> to make technology accessible to diverse communities. I worked on developing text-to-speech and automatic speech recognition systems for Urdu.</li>
