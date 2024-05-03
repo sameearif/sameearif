@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+  color: #333;
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 800px;
+  justify-content: space-between;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.contact {
+  margin-top: 30px;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.teaching {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.publications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.paper-material {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.btn {
+  padding: 2px;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9bd0ff;
+}
+
+.paper-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conf {
+  font-size: 0.9rem;
+}
+
+.social-media-icons  {
+  margin-top: 30px;
+}
+
+.social-media-icons a {
+  margin-right: 10px;
+}
+
+.social-media-icons img {
+  height: 30px;
+  width: 30px;
+}
+
+.inplace {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .name {
+    font-size: 2rem;
+  }
+  .role {
+    font-size: 0.9rem;
+  }
+  .image {
+    height: 150px;
+    width: 150px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .profile {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+  .info {
+    text-align: center;
+  }
+  .bio, .research, .teaching, .publications {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .research span, .research ol, .teaching span, .teaching ol, .bio span, .publications span, .publications ol, .publications a {
+    font-size: 0.7rem;
+  }
+}
