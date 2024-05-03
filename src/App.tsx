@@ -48,19 +48,15 @@ function App() {
 
       <div className='publications'>
         <div className='heading'>Publications</div>
-        <ol>
-          <li>
-            <div className='paper-heading'>
-              <span>UQA: Corpus for Urdu Question Answering</span>
-              <span className='conf'><em>LREC-Coling 2024</em></span>
-            </div>
-          </li>
+          <div className='paper-heading'>
+            <span>UQA: Corpus for Urdu Question Answering</span>
+            <span className='conf'><em>LREC-Coling 2024</em></span>
+          </div>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2405.01458" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/sameearif/uqa" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/uqa" target="_blank">Huggingface</a>
           </div>
-        </ol>
       </div>
     </div>
   );
