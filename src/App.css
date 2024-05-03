@@ -173,7 +173,12 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  .research span, .research ol, .teaching span, .teaching ol, .bio span, .publications span, .publications ol, .publications a {
+  .research span, .research ol, .teaching span, .teaching ol, .bio span, .publications span, .publications ol {
     font-size: 0.7rem;
+  }
+  .btn {
+    font-size: 0.35rem;
+    padding: 2px;
+    border-radius: 3px;
   }
 }
