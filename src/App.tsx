@@ -28,7 +28,7 @@ function App() {
 
       <div className='research'>
         <div className='heading'>Research</div>
-        <span>My research has focused on:</span>
+        <span>Research projects I have worked on:</span>
         <ol>
           <li><b>Urdu Question-Answering System</b> to make healthcare and educational resources accessible to Urdu-speaking communities. The research paper for this project will appear at LREC-Coling 2024.</li>
           <li><b>Multimodal Language Models</b> to make technology accessible to diverse communities. I worked on developing text-to-speech and automatic speech recognition systems for Urdu.</li>
