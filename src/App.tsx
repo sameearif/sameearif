@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = 'CV.pdf';
+    link.download = 'Samee_Arif_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className='App'>
       <div className='profile'>
@@ -12,6 +20,7 @@ function App() {
           <span className='role'>Lahore University of Management Sciences</span>
           <a className='contact' href="mailto:samee.arif@lums.edu.pk">samee.arif@lums.edu.pk</a>
           <div className='social-media-icons'>
+              <div className='CV' onClick={downloadCV}>CV</div>
               <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer"><img src="github.png" /></a>
               <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" /></a>
               <a href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer"><img src="huggingface.png" /></a>
