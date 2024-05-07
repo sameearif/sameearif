@@ -130,7 +130,18 @@
 }
 
 .social-media-icons  {
+  display: flex;
   margin-top: 30px;
+}
+
+.CV {
+  font-size: 28px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.CV:hover {
+  cursor: pointer;
 }
 
 .social-media-icons a {
