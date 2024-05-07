@@ -34,7 +34,7 @@ function App() {
           <li><b>Multimodal Language Models</b> to make technology accessible to diverse communities. I worked on developing text-to-speech and automatic speech recognition systems for Urdu.</li>
           <li><b>Urdu Optical Recognition System</b> to make information accessible to low-literacy and visually impaired communities.</li>
         </ol>
-        <span>Currently, I am working on developing a multimodal and multilingual graduate assistant tool leveraging Large Language Models to provide educational counselling.</span>
+        <span>Currently, I am working on developing a multimodal and multilingual graduate assistant tool leveraging Large Language Models to provide educational counseling.</span>
       </div>
 
       <div className='teaching'>
