@@ -62,7 +62,7 @@ function App() {
             <span className='conf'><em>LREC-Coling 2024</em></span>
           </div>
           <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2405.01458" target="_blank">Paper</a>
+            <a className='btn' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/sameearif/uqa" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/uqa" target="_blank">Huggingface</a>
           </div>
