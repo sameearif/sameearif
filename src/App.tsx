@@ -37,13 +37,18 @@ function App() {
 
       <div className='research'>
         <div className='heading'>Research</div>
+        <span>My current projects include:</span>
+        <ol>
+          <li><b>Multi-Agent Workflows</b> for synthetic preference optimization dataset generation and LLM self-improvement.</li>
+          <li><b>Multimodal and Multilingual Graduate Assistant Tool</b> leveraging Large Language Models (LLMs) to provide educational counseling.</li>
+          <li><b>Kahaani</b>, an Urdu story generation chatbot for children to help them learn Urdu through engaging and interactive storytelling.</li>
+        </ol>
         <span>Research projects I have worked on:</span>
         <ol>
           <li><b>Urdu Question-Answering System</b> to make healthcare and educational resources accessible to Urdu-speaking communities. The research paper for this project will appear at LREC-Coling 2024.</li>
           <li><b>Multimodal Language Models</b> to make technology accessible to diverse communities. I worked on developing text-to-speech and automatic speech recognition systems for Urdu.</li>
           <li><b>Urdu Optical Recognition System</b> to make information accessible to low-literacy and visually impaired communities.</li>
         </ol>
-        <span>Currently, I am working on developing a multimodal and multilingual graduate assistant tool leveraging Large Language Models to provide educational counseling.</span>
       </div>
 
       <div className='teaching'>
@@ -66,6 +71,23 @@ function App() {
             <a className='btn' href="https://github.com/sameearif/uqa" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/uqa" target="_blank">Huggingface</a>
           </div>
+          <br></br>
+          <div className='paper-heading'>
+            <span>Generalists vs Specialists: Evaluating Large Language Models for Urdu</span>
+            <span className='conf'><em>Submitted to ARR (June 2024)</em></span>
+          </div>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2407.04459v1" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/ULRs" target="_blank">Huggingface</a>
+          </div>
+      </div>
+
+      <div className='news'>
+      <div className='heading'>News</div>
+      <div className='news-content'><b>July 2024:</b> The <em>Multi-Agent Workflows for Dataset Creation and Self-Improvement</em> project has received funding from the OpenAI Research Access Program.</div>
+      <br></br>
+      <div className='news-content'><b>May 2024:</b> The <em>Generalists vs Specialists: Evaluating Large Language Models for Urdu</em> project has received funding from the OpenAI Research Access Program.</div>
       </div>
     </div>
   );
