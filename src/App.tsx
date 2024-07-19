@@ -45,7 +45,8 @@ function App() {
         </ol>
         <span>Research projects I have worked on:</span>
         <ol>
-          <li><b>Urdu Question-Answering System</b> to make healthcare and educational resources accessible to Urdu-speaking communities. The research paper for this project will appear at LREC-Coling 2024.</li>
+          <li><b>Generalists vs Specialists: Evaluating Large Language Models for Urdu.</b> We compared the performance of general-purpose and special-purpose models on various Urdu NLP tasks. The paper for this project was submitted to ARR in June 2024.</li>
+          <li><b>UQA: Corpus for Urdu Question Answering.</b> We introduced a novel dataset for question answering and text comprehension in Urdu using EATs technique. The paper for this project appeared at LREC-Coling 2024.</li>
           <li><b>Multimodal Language Models</b> to make technology accessible to diverse communities. I worked on developing text-to-speech and automatic speech recognition systems for Urdu.</li>
           <li><b>Urdu Optical Recognition System</b> to make information accessible to low-literacy and visually impaired communities.</li>
         </ol>
