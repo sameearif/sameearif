@@ -86,9 +86,9 @@ function App() {
 
       <div className='news'>
       <div className='heading'>News</div>
-      <div className='news-content'><b>July 2024:</b> The <em>Multi-Agent Workflows for Dataset Creation and Self-Improvement</em> project has received funding from the OpenAI Research Access Program.</div>
+      <div className='news-content'><b>July 2024:</b> The  project <em>Multi-Agent Workflows for Preference Optimization Dataset Creation and LLM Self-Improvement</em> has received funding from the OpenAI Research Access Program.</div>
       <br></br>
-      <div className='news-content'><b>May 2024:</b> The <em>Generalists vs Specialists: Evaluating Large Language Models for Urdu</em> project has received funding from the OpenAI Research Access Program.</div>
+      <div className='news-content'><b>May 2024:</b> The project <em>Generalists vs Specialists: Evaluating Large Language Models for Urdu</em> has received funding from the OpenAI Research Access Program.</div>
       </div>
     </div>
   );
