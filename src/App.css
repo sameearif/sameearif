@@ -192,11 +192,11 @@
   .info {
     text-align: center;
   }
-  .bio, .research, .teaching, .publications {
+  .bio, .research, .teaching, .publications, .news{
     margin-left: 50px;
     margin-right: 50px;
   }
-  .research span, .research ol, .teaching span, .teaching ol, .bio span, .publications span, .publications ol {
+  .research span, .research ol, .teaching span, .teaching ol, .bio span, .publications span, .publications ol, .news-content {
     font-size: 0.7rem;
   }
   .btn {
