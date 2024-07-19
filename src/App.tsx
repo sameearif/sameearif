@@ -39,8 +39,8 @@ function App() {
         <div className='heading'>Research</div>
         <span>My current projects include:</span>
         <ol>
-          <li><b>Multi-Agent Workflows</b> for synthetic preference optimization dataset generation and LLM self-improvement.</li>
-          <li><b>Multimodal and Multilingual Graduate Assistant Tool</b> leveraging Large Language Models (LLMs) to provide educational counseling.</li>
+          <li><b>Multi-Agent Workflows</b> for synthetic preference optimization dataset generation and Large Language Model (LLM) self-improvement.</li>
+          <li><b>Multimodal and Multilingual Graduate Assistant Tool</b> leveraging LLMs to provide educational counseling.</li>
           <li><b>Kahaani</b>, an Urdu story generation chatbot for children to help them learn Urdu through engaging and interactive storytelling.</li>
         </ol>
         <span>Research projects I have worked on:</span>
