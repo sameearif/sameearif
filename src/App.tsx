@@ -63,8 +63,28 @@ function App() {
 
       <div className='publications'>
         <div className='heading'>Publications</div>
+        <div className='paper-heading'>
+          <span className='paper-name'>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</span>
+          <span className='conf'><em>In Submission</em></span>
+        </div>
+        <div className='paper-material'>
+          <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
+          <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
+          <a className='btn' target="_blank">Huggingface</a>
+        </div>
+        <br></br>
+        <div className='paper-heading'>
+            <span className='paper-name'>Generalists vs Specialists: Evaluating Large Language Models for Urdu</span>
+            <span className='conf'><em>Submitted to ARR (June 2024)</em></span>
+          </div>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2407.04459v1" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/ULRs" target="_blank">Huggingface</a>
+          </div>
+          <br></br>
           <div className='paper-heading'>
-            <span>UQA: Corpus for Urdu Question Answering</span>
+            <span className='paper-name'>UQA: Corpus for Urdu Question Answering</span>
             <span className='conf'><em>LREC-Coling 2024</em></span>
           </div>
           <div className='paper-material'>
@@ -73,20 +93,11 @@ function App() {
             <a className='btn' href="https://huggingface.co/uqa" target="_blank">Huggingface</a>
           </div>
           <br></br>
-          <div className='paper-heading'>
-            <span>Generalists vs Specialists: Evaluating Large Language Models for Urdu</span>
-            <span className='conf'><em>Submitted to ARR (June 2024)</em></span>
-          </div>
-          <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2407.04459v1" target="_blank">Paper</a>
-            <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
-            <a className='btn' href="https://huggingface.co/ULRs" target="_blank">Huggingface</a>
-          </div>
       </div>
 
       <div className='news'>
       <div className='heading'>News</div>
-      <div className='news-content'><b>July 2024:</b> The  project <em>Multi-Agent Workflows for Preference Optimization Dataset Creation and LLM Self-Improvement</em> has received funding from the OpenAI Research Access Program.</div>
+      <div className='news-content'><b>July 2024:</b> The  project <em>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</em> has received funding from the OpenAI Research Access Program.</div>
       <br></br>
       <div className='news-content'><b>May 2024:</b> The project <em>Generalists vs Specialists: Evaluating Large Language Models for Urdu</em> has received funding from the OpenAI Research Access Program.</div>
       </div>
