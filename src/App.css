@@ -149,6 +149,18 @@
   margin-top: 30px;
 }
 
+.social-media-icons a,
+.social-media-icons div {
+    /* Initial state */
+    transition: transform 0.3s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+.social-media-icons a:hover,
+.social-media-icons div:hover {
+    /* Scale on hover */
+    transform: scale(1.1); /* Adjust scale factor as needed */
+}
+
 .CV {
   font-size: 28px;
   margin-right: 10px;

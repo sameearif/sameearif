@@ -24,7 +24,8 @@ function App() {
               <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer"><img src="github.png" /></a>
               <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" /></a>
               <a href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer"><img src="huggingface.png" /></a>
-            </div>
+              <a href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"><img src="dumplings.png" /></a>
+          </div>
         </div>
         <img className='image' src={'Samee.jpeg'}></img>
       </div>
