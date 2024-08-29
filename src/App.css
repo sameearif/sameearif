@@ -149,14 +149,33 @@
   margin-top: 30px;
 }
 
+.blog-icons  {
+  display: flex;
+  margin-top: 30px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.blog-icons img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.blog-icons a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
 .social-media-icons a,
-.social-media-icons div {
-    /* Initial state */
+.social-media-icons div,
+.blog-icons a {
     transition: transform 0.3s ease-in-out; /* Adjust duration and timing function as needed */
 }
 
 .social-media-icons a:hover,
-.social-media-icons div:hover {
+.social-media-icons div:hover,
+.blog-icons a:hover {
     /* Scale on hover */
     transform: scale(1.1); /* Adjust scale factor as needed */
 }
@@ -182,6 +201,16 @@
 
 .inplace {
   color: #337ab7;
+  text-decoration: none;
+}
+
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog a {
   text-decoration: none;
 }
 
