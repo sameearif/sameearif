@@ -57,6 +57,9 @@ function App() {
           <br></br>
           <li><b>WER We Stand: Benchmarking Urdu ASR Models.</b> We evaluated Whisper, Seameless-M4T and MMS ASR. We developed and presented the first conversational speech datadataset for Urdu. The <a className='inplace' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a> for this project is in submission at Coling.</li>
           <br></br>
+          <li><b>GradSelect and SoPify.</b> I worked on the development of an LLM-powered graduate assistant tool to provide educational counselling. We Implemented multimodality by fine-tuning and integrating automatic speech recognition and text-to-speech models into the system. The Chatbot is available at ActualAIz <a className='inplace' href="https://gradassist.actualaiz.com/" target="_blank">GradAssist</a>.
+</li>
+          <br></br>
           <li><b>Image to Speech Pipeline</b> to make information accessible to low-literacy and visually impaired communities. We fine-tuned Tesseract OCR for Urdu Nastaliq font and fine-tuned text-to-speech models.</li>
         </ol>
       </div>
