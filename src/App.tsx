@@ -1,16 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = 'CV.pdf';
-    link.download = 'Samee_Arif_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const openCV = () => {
+    window.open('CV.pdf', '_blank');
   };
+
   return (
     <div className='App'>
       <div className='profile'>
@@ -20,14 +14,11 @@ function App() {
           <span className='role'>Lahore University of Management Sciences</span>
           <a className='contact' href="mailto:samee.arif@lums.edu.pk">samee.arif@lums.edu.pk</a>
           <div className='social-media-icons'>
-              <div className='CV' onClick={downloadCV}>CV</div>
+              <div className='CV' onClick={openCV}>CV</div>
               <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer"><img src="github.png" /></a>
               <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" /></a>
               <a className='blog-img' href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer"><img src="huggingface.png" /></a>
-          </div>
-          <div className='blog-icons'>
-            <a className='blog' href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"><img src="dumplings.png" /></a>
-            <div>Dumplings—My NLP Blog</div>
+              <a className='blog-img' href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"><img src="dumplings.png" /></a>
           </div>
         </div>
         <img className='image' src={'Samee.jpeg'}></img>
@@ -36,123 +27,158 @@ function App() {
       <div className='bio'>
         <span>I am a Research Associate at <a className='inplace' href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>. I completed my Bachelor of Science in Computer Science in 2023 from LUMS. My research focuses on and Natural Language Processing (NLP), Educational Technologies, Human-Centered AI and Synthetic Data Generation.</span>
         <br></br>
-        <span>During my undergraduate I worked under the supervision of <a className='inplace' href="https://aghaaliraza.com/" target="_blank">Dr. Agha Ali Raza</a>. Currently I am working with Dr. Ali and <a className='inplace' href="https://cl.awaisathar.com/" target="_blank">Dr. Awais Athar</a> (<a className='inplace' href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a>, University of Cambridge). In addition, I have the privilege of collaborating with <a className='inplace' href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a> and <a className='inplace' href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a> at <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>. Currently I am an active member of the <a className='inplace' href="https://www.c-salt.org/" target="_blank">Center for Speech and Language Technologies</a> (LUMS).</span>
+        <span>During my undergraduate I worked under the supervision of <a className='inplace' href="https://aghaaliraza.com/" target="_blank">Dr. Agha Ali Raza</a>. Currently I am working with Dr. Ali and <a className='inplace' href="https://cl.awaisathar.com/" target="_blank">Dr. Awais Athar</a> (<a className='inplace' href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a>, University of Cambridge). In addition, I have the privilege of collaborating with <a className='inplace' href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a> and <a className='inplace' href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a> at <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>. I am an active member of the <a className='inplace' href="https://www.c-salt.org/" target="_blank">Center for Speech and Language Technologies</a> at LUMS.</span>
       </div>
 
       <div className='research'>
-        <div className='heading'>Research</div>
-        <span>My current projects include:</span>
-        <ol>
-          <li><b>Multi-Agent Workflows</b> for iterative preference optimization dataset generation and iterative LLM self-improvement.</li>
-        </ol>
-        <span>Research projects I have worked on:</span>
-        <ol>
-          <li><b>Generalists vs Specialists: Evaluating Large Language Models for Urdu.</b> We compared the performance of general-purpose and special-purpose models on various Urdu NLP tasks. The <a className='inplace' href="https://arxiv.org/abs/2407.04459v1" target="_blank">Paper</a> for this project is <b>accepted at EMNLP Findings 2024</b>.</li>
+      <div className='heading'>Current Projects</div>
+      <div className='project'>
+          <span><b>Multi-Agent Workflow for Iterative Self-Improvement</b></span>
           <br></br>
-          <li><b>UQA: Corpus for Urdu Question Answering.</b> We introduced a novel dataset for question answering and text comprehension in Urdu using EATs technique. The <a className='inplace' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">Paper</a> for this project <b>appeared at LREC-Coling 2024</b>.</li>
+          <span>I am working on using multi-agent feedback loop for iterative preference optimization dataset generation and iterative LLM self-improvement.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>Bias Detection and Mitigation in LLMs</b></span>
           <br></br>
-          <li><b>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation.</b> We evaluated multi-agent workflows for LLM-as-evaluators and LLM-as-generators modules to generate synthetic preference optimisation datasets using Llama-3.1, Gemma-2, and GPT-4 families. The <a className='inplace' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a> for this project is in submission at AAAI.</li>
-          <br></br>
-          <li><b>The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives.</b> We developed an education tool using Generative AI to enhance storytelling for children. It integrates narrative co-creation, text-to-speech, text-to-music, and text-to-video generation for an engaging learning experience. The <a className='inplace' href="https://arxiv.org/abs/2409.11261" target="_blank">Paper</a> is in submission at Coling.</li>
-          <br></br>
-          <li><b>WER We Stand: Benchmarking Urdu ASR Models.</b> We evaluated Whisper, Seameless-M4T and MMS ASR. We developed and presented the first conversational speech datadataset for Urdu. The <a className='inplace' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a> for this project is in submission at Coling.</li>
-          <br></br>
-          <li><b>GradSelect and SoPify.</b> I worked on the development of an LLM-powered graduate assistant tool to provide educational counselling. We Implemented multimodality by fine-tuning and integrating automatic speech recognition and text-to-speech models into the system. The Chatbot is available at ActualAIz <a className='inplace' href="https://gradassist.actualaiz.com/" target="_blank">GradAssist</a>.
-</li>
-          <br></br>
-          <li><b>Image to Speech Pipeline</b> to make information accessible to low-literacy and visually impaired communities. We fine-tuned Tesseract OCR for Urdu Nastaliq font and fine-tuned text-to-speech models.</li>
-        </ol>
+          <span>I am working on detecting biases related to gender, race, religion, age, and sexual orientation in LLMs and on how input language influences these biases. Additionally, I am evaluating fine-tuning techniques, SFT, DPO, KTO, and ORPO, to assess their effectiveness in mitigating biases.</span>
+        </div>
       </div>
 
-      <div className='teaching'>
-        <div className='heading'>Teaching Experience</div>
-        <span>Undergraduate Teaching Assistant:</span>
-        <ol>
-          <li>CS 535: Machine Learning (Fall 2022)</li>
-          <li>CS 100: Computational Problem Solving (Fall 2021)</li>
-        </ol>
-      </div>
+      <div className='research'>
+        <div className='heading'>Projects and Publications</div>
 
-      <div className='work'>
-        <div className='heading'>Work Experience</div>
-        <ol className='work-list'>
-          <li>
-            <div className='work-item'>
-              <span className='position'>Research Associate at <a className='inplace' href="https://www.c-salt.org/" target="_blank">CSaLT</a></span>
-              <span className='date'>June 2024 - Present</span>
-            </div>
-          </li>
-          <li>
-            <div className='work-item'>
-                <span className='position'>Research Associate at <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a></span>
-                <span className='date'>August 2023 - June 2024</span>
-            </div>
-          </li>
-          <li>
-            <div className='work-item'>
-                <span className='position'>Research Assistant at CSaLT</span>
-                <span className='date'>August 2021 - May 2023</span>
-            </div>
-          </li>
-        </ol>
-      </div>
-
-      <div className='publications'>
-        <div className='heading'>Publications</div>
-        <div className='paper-heading'>
-          <span className='paper-name'>The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</span>
-          <span className='authors'><b>Samee Arf</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar</span>
-          <span className='conf'><em>In Submission at Coling</em></span>
-        </div>
-        <div className='paper-material'>
-          <a className='btn' href="https://arxiv.org/abs/2409.11261" target="_blank">Paper</a>
-          <a className='btn' href="https://github.com/ulrs0/The-Art-of-Story-Telling" target="_blank">Code</a>
-        </div>
-        <br></br>
-        <div className='paper-heading'>
-          <span className='paper-name'>WER We Stand: Benchmarking Urdu ASR Models</span>
-          <span className='authors'><b>Samee Arf</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
-          <span className='conf'><em>In Submission at Coling</em></span>
-        </div>
-        <div className='paper-material'>
-          <a className='btn' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a>
-          <a className='btn' href="https://github.com/ulrs0/Urdu-ASR-Today" target="_blank">Code</a>
-          <a className='btn' href="https://huggingface.co/urdu-asr" target="_blank">Huggingface</a>
-        </div>
-        <br></br>
-        <div className='paper-heading'>
-          <span className='paper-name'>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</span>
-          <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
-          <span className='conf'><em>In Submission at AAAI</em></span>
-        </div>
-        <div className='paper-material'>
-          <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
-          <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
-          <a className='btn' href="https://huggingface.co/ma-eval" target="_blank">Huggingface</a>
-        </div>
-        <br></br>
-        <div className='paper-heading'>
-            <span className='paper-name'>Generalists vs Specialists: Evaluating Large Language Models for Urdu</span>
-            <span className='authors'><b>Samee Arf</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar</span>
-            <span className='conf'><em>EMNLP Findings 2024</em></span>
-          </div>
+        <div className='project'>
+          <span><b>Generalists vs Specialists: Evaluating Large Language Models for Urdu</b></span>
+          <br></br>
+          <span className='conf'>Accepted at EMNLP Findings 2024</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2407.04459v1" target="_blank">Paper</a>
+            <a className='btn' href="https://arxiv.org/abs/2407.04459v2" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/ULRs" target="_blank">Huggingface</a>
           </div>
+          <span>We compare general-purpose models like GPT-4-Turbo with special-purpose models fine-tuned for specific tasks, such as XLM-Roberta-large and mT5-large, on seven classification and six generation tasks in Urdu. Our findings show that special-purpose models consistently outperform general-purpose ones, and GPT-4-Turbo's evaluation for generation tasks aligns more closely with human evaluations.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>UQA: Corpus for Urdu Question Answering</b></span>
           <br></br>
-          <div className='paper-heading'>
-            <span className='paper-name'>UQA: Corpus for Urdu Question Answering</span>
-            <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Awais Athar, Agha Ali Raza</span>
-            <span className='conf'><em>LREC-Coling 2024</em></span>
-          </div>
+          <span className='conf'>Accepted at LREC-Coling 2024</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Awais Athar, Agha Ali Raza</span>
           <div className='paper-material'>
             <a className='btn' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/sameearif/uqa" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/uqa" target="_blank">Huggingface</a>
           </div>
+          <span>We introduce UQA, a new dataset for Urdu question answering and text comprehension, created using the EATS translation technique to preserve answer spans. UQA is benchmarked on state-of-the-art multilingual QA models, showing strong performance, including an F1 score of 85.99 with XLM-RoBERTa-XL.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</b></span>
           <br></br>
+          <span className='conf'>In Submission at AAAI 2025</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/ma-eval" target="_blank">Huggingface</a>
+          </div>
+          <span>We generated synthetic preference optimization datasets using multi-agent workflows, automating response evaluation and generation tasks traditionally done by humans. Our results show that GPT-4o is the most consistent LLM evaluator, while a feedback loop with Llama and Gemma models significantly outperforms single-agent approaches for dataset generation.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</b></span>
+          <br></br>
+          <span className='conf'>In Submission at Coling 2025</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar</span>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2409.11261" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/The-Art-of-Story-Telling" target="_blank">Code</a>
+          </div>
+          <span>We introduce an AI-powered education storytelling tool for children by combining narrative co-creation, text-to-speech, text-to-music and text-to-video generation. We conduct through evaluation of LLMs for story generation, text-to-speech models and text-to-video model.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>WER We Stand: Benchmarking Urdu ASR Models</b></span>
+          <br></br>
+          <span className='conf'>In Submission at Coling 2025</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/Urdu-ASR-Today" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/urdu-asr" target="_blank">Huggingface</a>
+          </div>
+          <span>We provide a comprehensive quantitative and qualitative evaluation of Urdu ASR models, analyzing Whisper, MMS, and Seamless-M4T. Our study introduces the first conversational speech dataset for Urdu ASR benchmarking and shows that seamless-large excels on read speech, while whisper-large leads on conversational speech.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>GradAssist and SoPify</b></span>
+          <br></br>
+          <div className='paper-material'>
+            <a className='btn' href="https://gradassist.actualaiz.com/" target="_blank">Website</a>
+          </div>
+          <span>I worked on the development of an LLM-powered graduate assistant tool to provide educational counselling. We Implemented multimodality by fine-tuning and integrating automatic speech recognition and text-to-speech models into the system.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>Image to Speech Pipeline</b></span>
+          <br></br>
+          <span>I worked on a image-to-speech to make information accessible to low-literacy and visually impaired communities. We fine-tuned Tesseract OCR and EasyOCR and fine-tuned text-to-speech models.</span>
+        </div>
+
+      </div>
+
+      <div className='teaching'>
+        <div className='heading'>Teaching Experience</div>
+        <div className='teaching-item'>
+          <span>Teaching Assistant for CS 535 Machine Learning (Graduate-level Course)</span>
+          <br></br>
+          <span className='date'>Fall 2022</span>
+        </div>
+        <div className='teaching-item'>
+          <span>Teaching Assistant for CS 100 Computational Problem Solving</span>
+          <br></br>
+          <span className='date'>Fall 2021</span>
+        </div>
+      </div>
+
+      <div className='work'>
+        <div className='heading'>Work Experience</div>
+          <div className='work-item'>
+            <span className='position'>Research Associate at Center for Speech and Language Technologies</span>
+            <br></br>
+            <span className='date'>June 2024 - Present</span>
+          </div>
+          <div className='work-item'>
+              <span className='position'>Research Associate at ActualAIz</span>
+              <br></br>
+              <span className='date'>August 2023 - June 2024</span>
+          </div>
+          <div className='work-item'>
+              <span className='position'>Research Assistant at Center for Speech and Language Technologies</span>
+              <br></br>
+              <span className='date'>August 2021 - May 2023</span>
+          </div>
       </div>
 
       <div className='news'>

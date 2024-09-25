@@ -72,7 +72,7 @@
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -97,13 +97,17 @@
   max-width: 800px;
 }
 
-.work-item {
-  display: flex;
-  justify-content: space-between;
-}
- 
 .date {
   font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.work-item {
+  margin-bottom: 10px;
+}
+
+.teaching-item {
+  margin-bottom: 10px;
 }
 
 .publications {
@@ -131,7 +135,8 @@
 .paper-material {
   display: flex;
   flex-direction: row;
-  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .btn {
@@ -139,15 +144,16 @@
   margin-right: 5px;
   border: 1px solid black;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   cursor: pointer;
   color: #333;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #9bd0ff;
+  background-color: #e8c7f7;
 }
+
 
 .paper-heading {
   display: flex;
@@ -155,14 +161,16 @@
 }
 
 .conf {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: 	#440475;
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
 .authors {
   font-size: 0.9rem;
-  margin-top: 2px;
+  color: 	#444444;
 }
 
 .paper-name {
@@ -177,7 +185,6 @@
 .blog-icons  {
   display: flex;
   margin-top: 30px;
-  /* justify-content: center; */
   align-items: center;
 }
 
