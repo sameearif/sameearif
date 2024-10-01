@@ -85,7 +85,7 @@ function App() {
         <div className='project'>
           <span><b>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</b></span>
           <br></br>
-          <span className='conf'>In Submission at AAAI 2025</span>
+          <span className='conf'>In Submission</span>
           <br></br>
           <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
           <div className='paper-material'>
@@ -101,7 +101,7 @@ function App() {
         <div className='project'>
           <span><b>The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</b></span>
           <br></br>
-          <span className='conf'>In Submission at Coling 2025</span>
+          <span className='conf'>In Submission</span>
           <br></br>
           <span className='authors'><b>Samee Arf</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
@@ -116,7 +116,7 @@ function App() {
         <div className='project'>
           <span><b>WER We Stand: Benchmarking Urdu ASR Models</b></span>
           <br></br>
-          <span className='conf'>In Submission at Coling 2025</span>
+          <span className='conf'>In Submission</span>
           <br></br>
           <span className='authors'><b>Samee Arf</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
