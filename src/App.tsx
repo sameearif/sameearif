@@ -57,7 +57,7 @@ function App() {
           <br></br>
           <span className='authors'><b>Samee Arf</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2407.04459v2" target="_blank">Paper</a>
+            <a className='btn' href="https://arxiv.org/abs/2407.04459" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/ULRs" target="_blank">Huggingface</a>
           </div>
@@ -93,7 +93,22 @@ function App() {
             <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
             <a className='btn' href="https://huggingface.co/ma-eval" target="_blank">Huggingface</a>
           </div>
-          <span>We generated synthetic preference optimization datasets using multi-agent workflows, automating response evaluation and generation tasks traditionally done by humans. Our results show that GPT-4o is the most consistent LLM evaluator, while a feedback loop with Llama and Gemma models significantly outperforms single-agent approaches for dataset generation.</span>
+          <span>We generate a synthetic preference optimization datasets using multi-agent workflows, automating response evaluation and generation tasks traditionally done by humans. Our results show that GPT-4o is the most consistent LLM evaluator, while a feedback loop with Llama and Gemma models significantly outperforms single-agent approaches for dataset generation.</span>
+        </div>
+
+        <br></br>
+
+        <div className='project'>
+          <span><b>With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</b></span>
+          <br></br>
+          <span className='conf'>In Submission</span>
+          <br></br>
+          <span className='authors'><b>Samee Arf</b>, Zohaib Khan, Agha Ali Raza, Awais Athar</span>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2410.12499" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/Social-Appropriateness-in-LLM-Generated-Text" target="_blank">Code</a>
+          </div>
+          <span>We present a analysis of biases in LLMs across gender, religion, and race. We introduce a methodology for generating a bias detection dataset using seven bias triggers: General Debate, Positioned Debate, Career Advice, Story Generation, Problem-Solving, Cover-Letter Writing, and CV Generation. We anonymise the LLM-generated text associated with each group using GPT-4o-mini and did a pairwise comparison using GPT-4o-as-a-Judge. Our analysis span three languages, English, German, and Arabic to explore how language influences bias manifestation</span>
         </div>
 
         <br></br>
@@ -108,7 +123,7 @@ function App() {
             <a className='btn' href="https://arxiv.org/abs/2409.11261" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/The-Art-of-Story-Telling" target="_blank">Code</a>
           </div>
-          <span>We introduce an AI-powered education storytelling tool for children by combining narrative co-creation, text-to-speech, text-to-music and text-to-video generation. We conduct through evaluation of LLMs for story generation, text-to-speech models and text-to-video model.</span>
+          <span>We introduce an AI-powered education storytelling tool for children by combining narrative co-creation, text-to-speech, text-to-music and text-to-video generation. We conduct thorough evaluation of LLMs for story generation, text-to-speech models and text-to-video model.</span>
         </div>
 
         <br></br>
@@ -139,12 +154,6 @@ function App() {
         </div>
 
         <br></br>
-
-        <div className='project'>
-          <span><b>Image to Speech Pipeline</b></span>
-          <br></br>
-          <span>I worked on a image-to-speech to make information accessible to low-literacy and visually impaired communities. We fine-tuned Tesseract OCR and EasyOCR and fine-tuned text-to-speech models.</span>
-        </div>
 
       </div>
 
