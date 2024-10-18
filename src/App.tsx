@@ -108,7 +108,7 @@ function App() {
             <a className='btn' href="https://arxiv.org/abs/2410.12499" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Social-Appropriateness-in-LLM-Generated-Text" target="_blank">Code</a>
           </div>
-          <span>We present a analysis of biases in LLMs across gender, religion, and race. We introduce a methodology for generating a bias detection dataset using seven bias triggers: General Debate, Positioned Debate, Career Advice, Story Generation, Problem-Solving, Cover-Letter Writing, and CV Generation. We anonymise the LLM-generated text associated with each group using GPT-4o-mini and did a pairwise comparison using GPT-4o-as-a-Judge. Our analysis spans three languages, English, German, and Arabic to explore how language influences bias manifestation</span>
+          <span>We present an analysis of biases in LLMs across gender, religion, and race. We introduce a methodology for generating a bias detection dataset using seven bias triggers: General Debate, Positioned Debate, Career Advice, Story Generation, Problem-Solving, Cover-Letter Writing, and CV Generation. We anonymise the LLM-generated text associated with each group using GPT-4o-mini and did a pairwise comparison using GPT-4o-as-a-Judge. Our analysis spans three languages, English, German, and Arabic to explore how language influences bias manifestation</span>
         </div>
 
         <br></br>
