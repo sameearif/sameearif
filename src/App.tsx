@@ -39,12 +39,6 @@ function App() {
         </div>
 
         <br></br>
-
-        <div className='project'>
-          <span><b>Bias Detection and Mitigation in LLMs</b></span>
-          <br></br>
-          <span>I am working on detecting biases related to gender, race, religion, age, and sexual orientation in LLMs and on how input language influences these biases. Additionally, I am evaluating fine-tuning techniques, SFT, DPO, KTO, and ORPO, to assess their effectiveness in mitigating biases.</span>
-        </div>
       </div>
 
       <div className='research'>
