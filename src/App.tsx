@@ -37,8 +37,6 @@ function App() {
           <br></br>
           <span>I am working on using multi-agent feedback loop for iterative preference optimization dataset generation and iterative LLM self-improvement.</span>
         </div>
-
-        <br></br>
       </div>
 
       <div className='research'>
