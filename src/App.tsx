@@ -171,7 +171,7 @@ function App() {
             <span className='date'>June 2024 - Present</span>
           </div>
           <div className='work-item'>
-              <span className='position'>Research Associate at ActualAIz</span>
+              <span className='position'>GenAI and Software Engineer at ActualAIz</span>
               <br></br>
               <span className='date'>August 2023 - June 2024</span>
           </div>
