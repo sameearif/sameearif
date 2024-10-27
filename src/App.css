@@ -208,7 +208,7 @@
 .social-media-icons a:hover,
 .social-media-icons div:hover,
 .blog-icons a:hover {
-    transform: scale(1.1); /* Adjust scale factor as needed */
+    transform: scale(1.1);
 }
 
 .CV {
@@ -272,12 +272,12 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  .research span, .research ol, .work ol, .work span, .teaching span, .teaching ol, .bio span, .publications span, .publications ol, .news-content {
-    font-size: 0.7rem;
-  }
   .btn {
     font-size: 0.35rem;
     padding: 2px;
     border-radius: 3px;
+  }
+  .social-media-icons {
+    justify-content: center;
   }
 }
