@@ -47,7 +47,7 @@ function App() {
           <br></br>
           <span className='conf'>Accepted at EMNLP Findings 2024</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar</span>
+          <span className='authors'><b>Samee Arif</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2407.04459" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Generalists-vs-Specialists" target="_blank">Code</a>
@@ -63,7 +63,7 @@ function App() {
           <br></br>
           <span className='conf'>Accepted at LREC-Coling 2024</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Awais Athar, Agha Ali Raza</span>
+          <span className='authors'><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza</span>
           <div className='paper-material'>
             <a className='btn' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/sameearif/uqa" target="_blank">Code</a>
@@ -79,7 +79,7 @@ function App() {
           <br></br>
           <span className='conf'>In Submission</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
+          <span className='authors'><b>Samee Arif</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
@@ -95,7 +95,7 @@ function App() {
           <br></br>
           <span className='conf'>In Submission</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Zohaib Khan, Agha Ali Raza, Awais Athar</span>
+          <span className='authors'><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2410.12499" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Social-Appropriateness-in-LLM-Generated-Text" target="_blank">Code</a>
@@ -110,7 +110,7 @@ function App() {
           <br></br>
           <span className='conf'>In Submission</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar</span>
+          <span className='authors'><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2409.11261" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/The-Art-of-Story-Telling" target="_blank">Code</a>
@@ -125,7 +125,7 @@ function App() {
           <br></br>
           <span className='conf'>In Submission</span>
           <br></br>
-          <span className='authors'><b>Samee Arf</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
+          <span className='authors'><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
             <a className='btn' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a>
             <a className='btn' href="https://github.com/ulrs0/Urdu-ASR-Today" target="_blank">Code</a>
