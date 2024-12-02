@@ -25,7 +25,7 @@ function App() {
       </div>
 
       <div className='bio'>
-        <span>I am a Research Associate at <a className='inplace' href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>. I completed my Bachelor of Science in Computer Science in 2023 from LUMS. My research focuses on and Natural Language Processing (NLP), Educational Technologies, Human-Centered AI and Synthetic Data Generation.</span>
+        <span>I am a Research Associate at <a className='inplace' href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>. I completed my Bachelor of Science in Computer Science in 2023 from LUMS. My research focuses on and Natural Language Processing (NLP), specifically (1) Biases and Fairness, (2) LLM Optimization, (3) Multilingual NLP, and (4) NLP for Social Good.</span>
         <br></br>
         <span>During my undergraduate I worked under the supervision of <a className='inplace' href="https://aghaaliraza.com/" target="_blank">Dr. Agha Ali Raza</a>. Currently I am working with Dr. Ali and <a className='inplace' href="https://cl.awaisathar.com/" target="_blank">Dr. Awais Athar</a> (<a className='inplace' href="https://www.ebi.ac.uk/" target="_blank">EMBL-EBI</a>, University of Cambridge). In addition, I have the privilege of collaborating with <a className='inplace' href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a> and <a className='inplace' href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a> at <a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>. I am an active member of the <a className='inplace' href="https://www.c-salt.org/" target="_blank">Center for Speech and Language Technologies</a> at LUMS.</span>
       </div>
@@ -75,17 +75,17 @@ function App() {
         <br></br>
 
         <div className='project'>
-          <span><b>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</b></span>
+          <span><b>WER We Stand: Benchmarking Urdu ASR Models</b></span>
           <br></br>
-          <span className='conf'>In Submission</span>
+          <span className='conf'>Accepted at Coling 2025</span>
           <br></br>
-          <span className='authors'><b>Samee Arif</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
+          <span className='authors'><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
           <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
-            <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
-            <a className='btn' href="https://huggingface.co/ma-eval" target="_blank">Huggingface</a>
+            <a className='btn' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/Urdu-ASR-Today" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/urdu-asr" target="_blank">Huggingface</a>
           </div>
-          <span>We generate a synthetic preference optimization datasets using multi-agent workflows, automating response evaluation and generation tasks traditionally done by humans. Our results show that GPT-4o is the most consistent LLM evaluator, while a feedback loop with Llama and Gemma models significantly outperforms single-agent approaches for dataset generation.</span>
+          <span>We provide a comprehensive quantitative and qualitative evaluation of Urdu ASR models, analyzing Whisper, MMS, and Seamless-M4T. Our study introduces the first conversational speech dataset for Urdu ASR benchmarking and shows that seamless-large excels on read speech, while whisper-large leads on conversational speech.</span>
         </div>
 
         <br></br>
@@ -104,6 +104,22 @@ function App() {
         </div>
 
         <br></br>
+        
+        <div className='project'>
+          <span><b>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</b></span>
+          <br></br>
+          <span className='conf'>In Submission</span>
+          <br></br>
+          <span className='authors'><b>Samee Arif</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza</span>
+          <div className='paper-material'>
+            <a className='btn' href="https://arxiv.org/abs/2408.08688" target="_blank">Paper</a>
+            <a className='btn' href="https://github.com/ulrs0/MA-PO" target="_blank">Code</a>
+            <a className='btn' href="https://huggingface.co/ma-eval" target="_blank">Huggingface</a>
+          </div>
+          <span>We generate a synthetic preference optimization datasets using multi-agent workflows, automating response evaluation and generation tasks traditionally done by humans. Our results show that GPT-4o is the most consistent LLM evaluator, while a feedback loop with Llama and Gemma models significantly outperforms single-agent approaches for dataset generation.</span>
+        </div>
+
+        <br></br>
 
         <div className='project'>
           <span><b>The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</b></span>
@@ -116,22 +132,6 @@ function App() {
             <a className='btn' href="https://github.com/ulrs0/The-Art-of-Story-Telling" target="_blank">Code</a>
           </div>
           <span>We introduce an AI-powered education storytelling tool for children by combining narrative co-creation, text-to-speech, text-to-music and text-to-video generation. We conduct thorough evaluation of LLMs for story generation, text-to-speech models and text-to-video model.</span>
-        </div>
-
-        <br></br>
-
-        <div className='project'>
-          <span><b>WER We Stand: Benchmarking Urdu ASR Models</b></span>
-          <br></br>
-          <span className='conf'>In Submission</span>
-          <br></br>
-          <span className='authors'><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar</span>
-          <div className='paper-material'>
-            <a className='btn' href="https://arxiv.org/abs/2409.11252" target="_blank">Paper</a>
-            <a className='btn' href="https://github.com/ulrs0/Urdu-ASR-Today" target="_blank">Code</a>
-            <a className='btn' href="https://huggingface.co/urdu-asr" target="_blank">Huggingface</a>
-          </div>
-          <span>We provide a comprehensive quantitative and qualitative evaluation of Urdu ASR models, analyzing Whisper, MMS, and Seamless-M4T. Our study introduces the first conversational speech dataset for Urdu ASR benchmarking and shows that seamless-large excels on read speech, while whisper-large leads on conversational speech.</span>
         </div>
 
         <br></br>
