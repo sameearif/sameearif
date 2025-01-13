@@ -171,7 +171,7 @@
   }
 
   .me {
-    width: 100px; /* Reduce the image size for smaller screens */
+    width: 250px;
   }
 
   .me.shrink {
@@ -183,7 +183,7 @@
     gap: 15px;
     justify-content: center;
     font-size: 1em;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 
@@ -223,7 +223,7 @@
 
 @media screen and (max-width: 480px) {
   .me {
-    width: 100px; /* Further reduce image size for very small screens */
+    width: 250px; /* Further reduce image size for very small screens */
   }
 
   .me.shrink {
@@ -231,6 +231,7 @@
   }
 
   .nav-bar {
+    margin-top: 50px;
     gap: 10px; /* Reduce gap between nav items */
   }
 
