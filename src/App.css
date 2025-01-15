@@ -29,12 +29,14 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 50px;
+  
 }
 
 .transition-container.top {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .me-container {
@@ -44,18 +46,19 @@
 .me {
   width: 300px;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .me.shrink {
   width: 100px;
   height: auto;
+  margin-bottom: 0px;
 }
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-top: 50px;
   font-size: 1.3em;
   color: #008dbe;
   font-weight: 500;
@@ -66,7 +69,6 @@
 .nav-bar.top {
   display: flex;
   font-size: 1.2em;
-  margin-left: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -172,7 +174,7 @@
   .transition-container.top {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: baseline;
   }
 
   .transition-container {
@@ -181,6 +183,7 @@
 
   .me {
     width: 250px;
+    margin-bottom: 40px;
   }
 
   .me.shrink {
@@ -200,9 +203,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8em;
-    margin-left: 50px;
-    gap: 10px;
+    font-size: 1.2em;
+    gap: 20px;
   }
 
   .nav-item {
@@ -234,9 +236,157 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+  .app-container {
+    display: flex;
+    width: 90%; /* Adjust container width for smaller screens */
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .transition-container.top {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  .transition-container {
+    margin-bottom: 0px;
+  }
+
+  .me {
+    width: 250px;
+  }
+
+  .me.shrink {
+    width: 80px;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+    gap: 15px;
+    justify-content: center;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0em;
+    gap: 15px;
+  }
+
+  .nav-item {
+    font-size: 1em; /* Adjust font size for nav items */
+  }
+
+  .social-media-icons {
+    flex-wrap: wrap; /* Wrap social media icons */
+    gap: 15px; /* Add spacing between icons */
+    margin-top: 20px;
+  }
+
+  .social-media-icons a {
+    margin: 10px; /* Adjust spacing between icons */
+  }
+
+  .social-media-icons img {
+    height: 40px; /* Adjust icon size for smaller screens */
+    width: 40px;
+  }
+
+  .about-page {
+    padding: 0 10px; /* Add padding for better readability on smaller screens */
+  }
+
+  .about-page p, .about-page ul {
+    font-size: 1em; /* Adjust text size for smaller screens */
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app-container {
+    display: flex;
+    width: 90%; /* Adjust container width for smaller screens */
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .transition-container.top {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  .transition-container {
+    margin-bottom: 0px;
+  }
+
+  .me {
+    width: 250px;
+  }
+
+  .me.shrink {
+    width: 80px;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+    gap: 15px;
+    justify-content: center;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    gap: 14px;
+  }
+
+  .nav-item {
+    font-size: 1em; /* Adjust font size for nav items */
+  }
+
+  .social-media-icons {
+    flex-wrap: wrap; /* Wrap social media icons */
+    gap: 15px; /* Add spacing between icons */
+    margin-top: 20px;
+  }
+
+  .social-media-icons a {
+    margin: 10px; /* Adjust spacing between icons */
+  }
+
+  .social-media-icons img {
+    height: 40px; /* Adjust icon size for smaller screens */
+    width: 40px;
+  }
+
+  .about-page {
+    padding: 0 10px; /* Add padding for better readability on smaller screens */
+  }
+
+  .about-page p, .about-page ul {
+    font-size: 1em; /* Adjust text size for smaller screens */
+    line-height: 1.4;
+  }
+}
+
+
+@media screen and (max-width: 510px) {
   .me {
     width: 250px; /* Further reduce image size for very small screens */
+    margin-bottom: -10px;
   }
 
   .me.shrink {
@@ -267,8 +417,8 @@
 
   .nav-bar.top {
     display: flex;
-    margin-left: 10px;
     gap: 10px;
     align-items: center;
+    font-size: 0.80em;
   }
 }
