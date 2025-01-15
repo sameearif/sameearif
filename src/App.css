@@ -26,17 +26,15 @@
 
 .transition-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .transition-container.top {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 
 .me-container {
@@ -61,13 +59,16 @@
   font-size: 1.3em;
   color: #008dbe;
   font-weight: 500;
-  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar.top {
   display: flex;
   font-size: 1.2em;
-  margin-left: 50px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
@@ -161,13 +162,21 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .app-container {
+    display: flex;
     width: 90%; /* Adjust container width for smaller screens */
     margin-top: 15px;
+    align-items: center;
+    justify-content: center;
   }
 
   .transition-container.top {
-    align-items: center;
+    display: flex;
     width: 100%;
+    align-items: center;
+  }
+
+  .transition-container {
+    margin-bottom: 0px;
   }
 
   .me {
@@ -183,13 +192,17 @@
     gap: 15px;
     justify-content: center;
     font-size: 1em;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-bar.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.8em;
-    margin-left: 0px;
+    margin-left: 50px;
+    gap: 10px;
   }
 
   .nav-item {
@@ -244,7 +257,18 @@
     width: 35px;
   }
 
+  .social-media-icons {
+    gap: 0px; /* Add spacing between icons */
+  }
+
   .about-page p, .about-page ul {
     font-size: 0.9em; /* Reduce text size for very small screens */
+  }
+
+  .nav-bar.top {
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+    align-items: center;
   }
 }

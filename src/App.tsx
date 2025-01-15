@@ -64,14 +64,6 @@ function App() {
             >
               Grants
             </div>
-            <div 
-              className='nav-item' 
-            >
-              <a href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer">Blog</a>
-            </div>
-
-
-            <a href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"></a>
           </div>
         </div>
 
@@ -81,6 +73,7 @@ function App() {
           <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer"><img src="github.png" alt='GitHub' /></a>
           <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt='Google Scholar' /></a>
           <a className='blog-img' href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer"><img src="huggingface.png" alt='Hugging Face' /></a>
+          <a className='blog-img' href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"><img src="dumplings.png" alt='Hugging Face' /></a>
         </div>
         )}
 
