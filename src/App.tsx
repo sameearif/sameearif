@@ -98,11 +98,11 @@ function App() {
             <p style={{ fontSize: '1.25em' }}>Teaching</p>
             <hr style={{ marginTop: '-15px' }} ></hr>
             <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
-              <li>CS 1210: Computer Science I Fundamentals (University of Iowa)</li>
-              <li>CS 535: Machine Learning (Lahore University of Management Sciences)</li>
-              <li>CS 100: Computational Problem Solving (Lahore University of Management Sciences)</li>
+              <li>CS 1210: Computer Science I Fundamentals (<em>University of Iowa</em>)</li>
+              <li>CS 535: Machine Learning (<em>Lahore University of Management Sciences</em>)</li>
+              <li>CS 100: Computational Problem Solving (<em>Lahore University of Management Sciences</em>)</li>
             </ul>
-            <p style={{ marginTop: '-15px', fontSize: '1em' }}>I mentored 200+ students and taught topics including linear regression, unsupervised learning, and deep learning as a teaching assistant.</p>
+            <p style={{ marginTop: '-15px', fontSize: '1em' }}>I mentored 250+ students and taught topics including linear regression, unsupervised learning, and deep learning as a teaching assistant.</p>
 
             <p style={{ fontSize: '1.25em' }}>Professional</p>
             <hr style={{ marginTop: '-15px' }} ></hr>
@@ -118,16 +118,16 @@ function App() {
             <p>Artificial Intelligence / Machine Learning / Natural Language Processing</p>
             <hr></hr>
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza "<a className='inplace' href="https://arxiv.org/abs/2408.08688" target="_blank">The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</a>" in <em>GEM2 Workshop at the Association for Computational Linguistics (ACL)</em> July 27-August 1, Vienna, Austria. 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza, "<a className='inplace' href="https://arxiv.org/abs/2408.08688" target="_blank">The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</a>" in <em>GEM2 Workshop at the Association for Computational Linguistics (ACL)</em> July 27-August 1, Vienna, Austria. 2025.</li>
               <li style={{ marginLeft: '15px' }}><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar, "<a className='inplace' href="https://aclanthology.org/2025.coling-main.397/" target="_blank">WER We Stand: Benchmarking Urdu ASR Models</a>", in <em>The 31st International Conference on Computational Linguistics (COLING)</em>, January 19-24, Abu Dhabi, UAE. 2025.</li>
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar, "<a className='inplace' href="https://aclanthology.org/2024.findings-emnlp.426/" target="_blank">Generalists vs. Specialists: Evaluating Large Language Models for Urdu</a>", in <em>The Findings of the Association for Computational Linguistics: Empirical Methods in Natural Language Processing (EMNLP)</em>, November 11-15, Miami, US. 2024.</li>
-              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza "<a className='inplace' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">UQA: Corpus for Urdu Question Answering</a>", in <em>The Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)</em>, May 20-25, Torino, Italy. 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza, "<a className='inplace' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">UQA: Corpus for Urdu Question Answering</a>", in <em>The Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)</em>, May 20-25, Torino, Italy. 2024.</li>
             </ul>
             <p>Preprints</p>
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-            <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid* "<a className='inplace' href="https://arxiv.org/abs/2505.13943" target="_blank">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
-            <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://www.arxiv.org/abs/2410.12499" target="_blank">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
-            <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://arxiv.org/abs/2409.11261" target="_blank">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
+            <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, "<a className='inplace' href="https://arxiv.org/abs/2505.13943" target="_blank">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
+            <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className='inplace' href="https://www.arxiv.org/abs/2410.12499" target="_blank">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
+            <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar, "<a className='inplace' href="https://arxiv.org/abs/2409.11261" target="_blank">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
             </ul>
           </div>
         )}
