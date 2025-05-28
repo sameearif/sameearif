@@ -98,7 +98,7 @@ function App() {
             <p style={{ fontSize: '1.25em' }}>Teaching</p>
             <hr style={{ marginTop: '-15px' }} ></hr>
             <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
-              <li>CS 1210: Computer Science I (Fundamentals) (University of Iowa)</li>
+              <li>CS 1210: Computer Science I Fundamentals (University of Iowa)</li>
               <li>CS 535: Machine Learning (Lahore University of Management Sciences)</li>
               <li>CS 100: Computational Problem Solving (Lahore University of Management Sciences)</li>
             </ul>
@@ -125,8 +125,9 @@ function App() {
             </ul>
             <p>Preprints</p>
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-            <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://www.arxiv.org/abs/2410.12499" target="_blank">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
-            <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://arxiv.org/abs/2409.11261" target="_blank">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid* "<a className='inplace' href="https://arxiv.org/abs/2505.13943" target="_blank">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://www.arxiv.org/abs/2410.12499" target="_blank">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar "<a className='inplace' href="https://arxiv.org/abs/2409.11261" target="_blank">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
             </ul>
           </div>
         )}
