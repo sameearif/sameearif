@@ -109,7 +109,7 @@ function App() {
             <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
               <li>Software and AI Engineer (<a className='inplace' href="https://www.actualaiz.com/" target="_blank">ActualAIz</a>)</li>
             </ul>
-            <p style={{ marginTop: '-15px', fontSize: '1em' }}>I worked on a multimodal and multilingual <a className='inplace' href="https://gradassist.actualaiz.com/" target="_blank">AI Assistant</a> for personalized educational counseling, delivering tailored guidance on Statements of Purpose and university selection to enhance student decision-making.</p>
+            <p style={{ marginTop: '-15px', fontSize: '1em',  marginBottom: '50px' }}>I worked on a multimodal and multilingual <a className='inplace' href="https://gradassist.actualaiz.com/" target="_blank">AI Assistant</a> for personalized educational counseling, delivering tailored guidance on Statements of Purpose and university selection to enhance student decision-making.</p>
         </div>
         )}
 
