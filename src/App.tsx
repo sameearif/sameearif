@@ -124,6 +124,7 @@ function App() {
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza, "<a className='inplace' href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank">UQA: Corpus for Urdu Question Answering</a>", in <em>The Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)</em>, May 20-25, Torino, Italy. 2024.</li>
             </ul>
             <p>Preprints</p>
+            <hr></hr>
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
             <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, "<a className='inplace' href="https://arxiv.org/abs/2505.13943" target="_blank">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
             <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className='inplace' href="https://www.arxiv.org/abs/2410.12499" target="_blank">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
