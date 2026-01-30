@@ -6,14 +6,13 @@
   align-items: center;
   background-color: #f0f0f0;
   min-height: 100vh;
-  max-height: 100%;
   margin: 0;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }
 
 .App.top {
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .app-container {
@@ -24,12 +23,13 @@
   justify-content: center;
 }
 
+/* ================= TRANSITION / HEADER ================= */
+
 .transition-container {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 50px;
-  
 }
 
 .transition-container.top {
@@ -51,9 +51,10 @@
 
 .me.shrink {
   width: 100px;
-  height: auto;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
+/* ================= NAV ================= */
 
 .nav-bar {
   display: flex;
@@ -67,11 +68,22 @@
 }
 
 .nav-bar.top {
-  display: flex;
   font-size: 1.2em;
-  justify-content: center;
-  align-items: center;
 }
+
+.nav-item {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: #A00;
+}
+
+/* ================= ICON BUTTON ================= */
 
 .icon-button {
   background: none;
@@ -80,50 +92,23 @@
   cursor: pointer;
 }
 
-
-.nav-item {
-  font-family: 'Roboto', serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  cursor: pointer;
-  transition: color 0.2s ease, text-decoration 0.3s ease;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: #008dbe;
-}
-
-.nav-item.active {
-  color: #A00;
-}
-
-.nav-item:hover {
-  color: #A00;
-}
+/* ================= SOCIAL ================= */
 
 .social-media-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .social-media-icons a,
-.social-media-icons div,
-.blog-icons a {
+.social-media-icons button {
   transition: transform 0.3s ease-in-out;
+  margin-right: 20px;
 }
 
 .social-media-icons a:hover,
-.social-media-icons div:hover,
-.blog-icons a:hover {
+.social-media-icons button:hover {
   transform: scale(1.1);
-}
-
-.social-media-icons a {
-  margin-right: 20px;
 }
 
 .social-media-icons img {
@@ -131,6 +116,9 @@
   width: 45px;
 }
 
+/* ================= CONTENT ================= */
+
+/* Hidden by default */
 .about-page {
   text-align: justify;
   text-justify: inter-word;
@@ -138,20 +126,16 @@
   transition: opacity 0.5s ease;
 }
 
-.about-page p {
-  font-size: 1.15em;
-  line-height: 1.5;
-  color: #444444;
+/* Visible when React adds class */
+.about-page.visible {
+  opacity: 1;
 }
 
+.about-page p,
 .about-page ul {
   font-size: 1.15em;
   line-height: 1.5;
   color: #444444;
-}
-
-.transition-container.top + .about-page {
-  opacity: 1;
 }
 
 .inplace {
@@ -159,34 +143,17 @@
   text-decoration: none;
 }
 
-.blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* ================= RESPONSIVE ================= */
 
-.blog a {
-  text-decoration: none;
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .app-container {
-    display: flex;
-    width: 90%; /* Adjust container width for smaller screens */
+    width: 90%;
     margin-top: 15px;
     align-items: center;
-    justify-content: center;
-  }
-
-  .transition-container.top {
-    display: flex;
-    width: 100%;
-    align-items: baseline;
   }
 
   .transition-container {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .me {
@@ -199,201 +166,36 @@
   }
 
   .nav-bar {
-    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
     font-size: 1em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-bar.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    gap: 20px;
-  }
-
-  .nav-item {
-    font-size: 1em; /* Adjust font size for nav items */
   }
 
   .social-media-icons {
-    flex-wrap: wrap; /* Wrap social media icons */
-    gap: 15px; /* Add spacing between icons */
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
   }
 
-  .social-media-icons a {
-    margin: 10px; /* Adjust spacing between icons */
-  }
-
   .social-media-icons img {
-    height: 40px; /* Adjust icon size for smaller screens */
+    height: 40px;
     width: 40px;
   }
 
   .about-page {
-    padding: 0 10px; /* Add padding for better readability on smaller screens */
+    padding: 0 10px;
   }
 
-  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
-    font-size: 1em; /* Adjust text size for smaller screens */
-    line-height: 1.4;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .app-container {
-    display: flex;
-    width: 90%; /* Adjust container width for smaller screens */
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .transition-container.top {
-    display: flex;
-    width: 100%;
-    align-items: baseline;
-  }
-
-  .transition-container {
-    margin-bottom: 0px;
-  }
-
-  .me {
-    width: 250px;
-  }
-
-  .me.shrink {
-    width: 80px;
-  }
-
-  .nav-bar {
-    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
-    gap: 15px;
-    justify-content: center;
+  .about-page p,
+  .about-page ul {
     font-size: 1em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-bar.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.0em;
-    gap: 15px;
-  }
-
-  .nav-item {
-    font-size: 1em; /* Adjust font size for nav items */
-  }
-
-  .social-media-icons {
-    flex-wrap: wrap; /* Wrap social media icons */
-    gap: 15px; /* Add spacing between icons */
-    margin-top: 20px;
-  }
-
-  .social-media-icons a {
-    margin: 10px; /* Adjust spacing between icons */
-  }
-
-  .social-media-icons img {
-    height: 40px; /* Adjust icon size for smaller screens */
-    width: 40px;
-  }
-
-  .about-page {
-    padding: 0 10px; /* Add padding for better readability on smaller screens */
-  }
-
-  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
-    font-size: 1em; /* Adjust text size for smaller screens */
     line-height: 1.4;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .app-container {
-    display: flex;
-    width: 90%; /* Adjust container width for smaller screens */
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .transition-container.top {
-    display: flex;
-    width: 100%;
-    align-items: baseline;
-  }
-
-  .transition-container {
-    margin-bottom: 0px;
-  }
-
-  .me {
-    width: 250px;
-  }
-
-  .me.shrink {
-    width: 80px;
-  }
-
-  .nav-bar {
-    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
-    gap: 15px;
-    justify-content: center;
-    font-size: 1em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-bar.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9em;
-    gap: 14px;
-  }
-
-  .nav-item {
-    font-size: 1em; /* Adjust font size for nav items */
-  }
-
-  .social-media-icons {
-    flex-wrap: wrap; /* Wrap social media icons */
-    gap: 15px; /* Add spacing between icons */
-    margin-top: 20px;
-  }
-
-  .social-media-icons a {
-    margin: 10px; /* Adjust spacing between icons */
-  }
-
-  .social-media-icons img {
-    height: 40px; /* Adjust icon size for smaller screens */
-    width: 40px;
-  }
-
-  .about-page {
-    padding: 0 10px; /* Add padding for better readability on smaller screens */
-  }
-
-  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
-    font-size: 1em; /* Adjust text size for smaller screens */
-    line-height: 1.4;
-  }
-}
-
 
 @media screen and (max-width: 510px) {
   .me {
-    width: 250px; /* Further reduce image size for very small screens */
+    width: 250px;
     margin-bottom: -10px;
   }
 
@@ -403,30 +205,20 @@
 
   .nav-bar {
     margin-top: 50px;
-    gap: 10px; /* Reduce gap between nav items */
+    gap: 10px;
   }
 
   .nav-item {
-    font-size: 0.9em; /* Reduce nav item font size */
+    font-size: 0.9em;
   }
 
   .social-media-icons img {
-    height: 35px; /* Reduce icon size for very small screens */
+    height: 35px;
     width: 35px;
   }
 
-  .social-media-icons {
-    gap: 0px; /* Add spacing between icons */
-  }
-
-  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
-    font-size: 0.9em; /* Reduce text size for very small screens */
-  }
-
-  .nav-bar.top {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 0.80em;
+  .about-page p,
+  .about-page ul {
+    font-size: 0.9em;
   }
 }
