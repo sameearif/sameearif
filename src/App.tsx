@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [page, setPage] = useState<string>('home');
+  const [page, setPage] = useState("home");
 
   useEffect(() => {
-    const currentPath = location.pathname.slice(1) || 'home';
+    const currentPath = location.pathname.slice(1) || "home";
     setPage(currentPath);
   }, [location]);
 
@@ -20,26 +20,30 @@ function App() {
     navigate(`/${newPage}`);
   };
 
-  const isTopLayout = page !== 'home';
+  const handleNavigationHome = () => {
+    navigate(`/`);
+  };
+
+  const isTopLayout = page !== "home";
 
   return (
-    <div className={`App ${isTopLayout ? 'top' : ''}`}>
+    <div className={`App ${isTopLayout ? "top" : ""}`}>
       <div className="app-container">
-        <div className={`transition-container ${isTopLayout ? 'top' : ''}`}>
-          <div className={`me-container ${isTopLayout ? 'shrink' : ''}`}>
-            <img className={`me ${isTopLayout ? 'shrink' : ''}`} src="me.png" alt="Profile" />
+        <div className={`transition-container ${isTopLayout ? "top" : ""}`}>
+          <div className={`me-container ${isTopLayout ? "shrink" : ""}`}>
+            <img className={`me ${isTopLayout ? "shrink" : ""}`} src="me.png" alt="Profile" />
           </div>
 
-          <div className={`nav-bar ${isTopLayout ? 'top' : ''}`}>
-            <div className={`nav-item ${page === 'home' ? 'active' : ''}`} onClick={() => navigate('/')}>Home</div>
-            <div className={`nav-item ${page === 'about' ? 'active' : ''}`} onClick={() => handleNavigation('about')}>About</div>
-            <div className={`nav-item ${page === 'experience' ? 'active' : ''}`} onClick={() => handleNavigation('experience')}>Experience</div>
-            <div className={`nav-item ${page === 'publications' ? 'active' : ''}`} onClick={() => handleNavigation('publications')}>Publications</div>
-            <div className={`nav-item ${page === 'grants' ? 'active' : ''}`} onClick={() => handleNavigation('grants')}>Grants</div>
+          <div className={`nav-bar ${isTopLayout ? "top" : ""}`}>
+            <div className={`nav-item ${page === "home" ? "active" : ""}`} onClick={handleNavigationHome}>Home</div>
+            <div className={`nav-item ${page === "about" ? "active" : ""}`} onClick={() => handleNavigation("about")}>About</div>
+            <div className={`nav-item ${page === "experience" ? "active" : ""}`} onClick={() => handleNavigation("experience")}>Experience</div>
+            <div className={`nav-item ${page === "publications" ? "active" : ""}`} onClick={() => handleNavigation("publications")}>Publications</div>
+            <div className={`nav-item ${page === "grants" ? "active" : ""}`} onClick={() => handleNavigation("grants")}>Grants</div>
           </div>
         </div>
 
-        {page === 'home' && (
+        {page === "home" && (
           <div className="social-media-icons">
             <button className="icon-button" onClick={openCV} aria-label="Open CV">
               <img src="cv.png" alt="CV" />
@@ -51,8 +55,8 @@ function App() {
           </div>
         )}
 
-        {page === 'about' && (
-          <div className={`about-page ${isTopLayout ? 'visible' : ''}`}>
+        {page === "about" && (
+          <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p>
               I am Samee Arif, a first-year Computer Science and Engineering Ph.D. student at the
               <a className="inplace" href="https://cse.engin.umich.edu/academics/graduate/graduate-programs/phd-in-cse/" target="_blank" rel="noopener noreferrer">
@@ -93,7 +97,7 @@ function App() {
             </p>
 
             <p>
-              When free, I create digital art, listen to Urdu music, read books, and play
+              When free, I paint using watercolors, create digital art, listen to Urdu music, read books, and play
               <a className="inplace" href="https://zelda.nintendo.com/breath-of-the-wild/" target="_blank" rel="noopener noreferrer">
                 {' '}The Legend of Zelda: Breath of The Wild
               </a>.
@@ -101,65 +105,53 @@ function App() {
           </div>
         )}
 
-        {page === 'experience' && (
-          <div className={`about-page ${isTopLayout ? 'visible' : ''}`}>
+        {page === "experience" && (
+          <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p style={{ fontSize: '1.25em' }}>Research</p>
-            <hr />
-            <ul>
+            <hr style={{ marginTop: '-15px' }} />
+            <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
               <li>Research Associate (CSaLT)</li>
               <li>Research Assistant (CSaLT)</li>
             </ul>
-
-            <p>
+            <p style={{ marginTop: '-15px', fontSize: '1em' }}>
               I mentored and led 30+ students at
               <a className="inplace" href="https://www.c-salt.org/" target="_blank" rel="noopener noreferrer">
                 {' '}Center for Speech and Language Technologies
-              </a>{' '}
+              </a>
               (CSaLT), a research lab at Lahore University of Management Sciences.
             </p>
 
             <p style={{ fontSize: '1.25em' }}>Teaching</p>
-            <hr />
-            <ul>
-              <li>CS 1210: Computer Science I Fundamentals (University of Iowa)</li>
-              <li>CS 535: Machine Learning (LUMS)</li>
-              <li>CS 100: Computational Problem Solving (LUMS)</li>
+            <hr style={{ marginTop: '-15px' }} />
+            <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
+              <li>CS 1210: Computer Science I Fundamentals (<em>University of Iowa</em>)</li>
+              <li>CS 535: Machine Learning (<em>Lahore University of Management Sciences</em>)</li>
+              <li>CS 100: Computational Problem Solving (<em>Lahore University of Management Sciences</em>)</li>
             </ul>
-
-            <p>
+            <p style={{ marginTop: '-15px', fontSize: '1em' }}>
               I mentored 250+ students and taught topics including linear regression,
               unsupervised learning, and deep learning as a teaching assistant.
             </p>
           </div>
         )}
 
-        {page === 'publications' && (
-          <div className={`about-page ${isTopLayout ? 'visible' : ''}`}>
+        {page === "publications" && (
+          <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p>Artificial Intelligence / Machine Learning / Natural Language Processing</p>
             <hr />
-            <ul>
-              <li>
-                <b>Samee Arif</b>*, Sualeha Farid*, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza,
-                “The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation”,
-                GEM2 Workshop at ACL, 2025.
-              </li>
+            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
+              <li style={{ marginLeft: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza, "<a className="inplace" href="https://aclanthology.org/2025.gem-1.4/" target="_blank" rel="noopener noreferrer">The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</a>" in <em>GEM2 Workshop at the Association for Computational Linguistics (ACL)</em>, 2025.</li>
             </ul>
           </div>
         )}
 
-        {page === 'grants' && (
-          <div className={`about-page ${isTopLayout ? 'visible' : ''}`}>
+        {page === "grants" && (
+          <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p>Research Grants</p>
             <hr />
-            <ul>
-              <li>
-                <b>OpenAI Research Access</b>, for
-                <em> The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation.</em>
-              </li>
-              <li>
-                <b>OpenAI Research Access</b>, for
-                <em> Generalists vs Specialists: Evaluating Large Language Models for Urdu.</em>
-              </li>
+            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
+              <li style={{ marginLeft: '15px' }}><b>OpenAI Research Access</b>, July 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>OpenAI Research Access</b>, May 2024.</li>
             </ul>
           </div>
         )}
@@ -169,7 +161,7 @@ function App() {
   );
 }
 
-export default function AppWrapper() {
+function AppWrapper() {
   return (
     <Router>
       <Routes>
@@ -182,3 +174,5 @@ export default function AppWrapper() {
     </Router>
   );
 }
+
+export default AppWrapper;
