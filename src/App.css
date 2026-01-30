@@ -230,7 +230,7 @@
     padding: 0 10px; /* Add padding for better readability on smaller screens */
   }
 
-  .about-page p, .about-page ul {
+  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
     font-size: 1em; /* Adjust text size for smaller screens */
     line-height: 1.4;
   }
@@ -303,7 +303,7 @@
     padding: 0 10px; /* Add padding for better readability on smaller screens */
   }
 
-  .about-page p, .about-page ul {
+  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
     font-size: 1em; /* Adjust text size for smaller screens */
     line-height: 1.4;
   }
@@ -376,7 +376,7 @@
     padding: 0 10px; /* Add padding for better readability on smaller screens */
   }
 
-  .about-page p, .about-page ul {
+  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
     font-size: 1em; /* Adjust text size for smaller screens */
     line-height: 1.4;
   }
@@ -411,7 +411,7 @@
     gap: 0px; /* Add spacing between icons */
   }
 
-  .about-page p, .about-page ul {
+  .about-page p, .about-page ul, .experience p, .experience ul, .publications, .publications ul, .grants p, .grants ul {
     font-size: 0.9em; /* Reduce text size for very small screens */
   }
 
