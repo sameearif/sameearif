@@ -66,7 +66,7 @@ function App() {
               <a className="inplace" href="https://web.eecs.umich.edu/~mihalcea/" target="_blank" rel="noopener noreferrer">
                 {' '}Prof. Rada Mihalcea
               </a>.
-              My research focuses on adversarial robustness, societal alignment, and explainability of large language models.
+              My research interests are in <b>Natural Language Processing</b> specifically in <em>LLM Reasoning</em> and <em>AI Safety</em>.
             </p>
 
             <p>
@@ -97,7 +97,15 @@ function App() {
             </p>
 
             <p>
-              When free, I paint using watercolors, create digital art, listen to Urdu music, read books, and play
+              Currently I am working on using LLM Jailbreaking techniques to investigate the phenomenon of "Shallow Safety Alignment". 
+              My research focuses on demonstrating how current safety mechanisms can be bypassed through "Prefilling Attacks". 
+              I am actively developing novel training objectives to create models that remain robust even when initial refusal barriers are breached.
+            </p>
+
+            <p>
+              When free, I paint using watercolors, create digital art, listen to Urdu music, write 
+              <a className="inplace" href="https://dumplings.sameearif.com/" target="_blank" rel="noopener noreferrer"> NLP blog</a>, 
+              work on my <a className="inplace" href="https://www.stardewvalley.net/" target="_blank" rel="noopener noreferrer">Stardew Valley</a>-inspired game, and play
               <a className="inplace" href="https://zelda.nintendo.com/breath-of-the-wild/" target="_blank" rel="noopener noreferrer">
                 {' '}The Legend of Zelda: Breath of The Wild
               </a>.
@@ -118,7 +126,7 @@ function App() {
               <a className="inplace" href="https://www.c-salt.org/" target="_blank" rel="noopener noreferrer">
                 {' '}Center for Speech and Language Technologies
               </a>
-              (CSaLT), a research lab at Lahore University of Management Sciences.
+              (CSaLT). I first authored six research papers, including three published at EMNLP, COLING, and LREC.
             </p>
 
             <p style={{ fontSize: '1.25em' }}>Teaching</p>
@@ -132,6 +140,15 @@ function App() {
               I mentored 250+ students and taught topics including linear regression,
               unsupervised learning, and deep learning as a teaching assistant.
             </p>
+
+            <p style={{ fontSize: '1.25em' }}>Professional</p>
+            <hr style={{ marginTop: '-15px' }} />
+            <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
+              <li>Software and AI Engineer (<a className='inplace' href="https://www.actualaiz.com/" target="_blank" rel="noopener noreferrer">ActualAIz</a>)</li>
+            </ul>
+            <p style={{ marginTop: '-15px', fontSize: '1em', marginBottom: '50px' }}>
+              I worked on a multimodal <a className='inplace' href="https://gradassist.actualaiz.com/" target="_blank" rel="noopener noreferrer">AI Assistant</a> for personalized educational counseling.
+            </p>
           </div>
         )}
 
@@ -140,7 +157,17 @@ function App() {
             <p>Artificial Intelligence / Machine Learning / Natural Language Processing</p>
             <hr />
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza, "<a className="inplace" href="https://aclanthology.org/2025.gem-1.4/" target="_blank" rel="noopener noreferrer">The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</a>" in <em>GEM2 Workshop at the Association for Computational Linguistics (ACL)</em>, 2025.</li>
+              <li style={{ marginLeft: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza, "<a className="inplace" href="https://aclanthology.org/2025.gem-1.4/" target="_blank" rel="noopener noreferrer">The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</a>" in <em>GEM2 Workshop at ACL</em>, 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://aclanthology.org/2025.coling-main.397/" target="_blank" rel="noopener noreferrer">WER We Stand: Benchmarking Urdu ASR Models</a>", in <em>COLING</em>, 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://aclanthology.org/2024.findings-emnlp.426/" target="_blank" rel="noopener noreferrer">Generalists vs. Specialists: Evaluating Large Language Models for Urdu</a>", in <em>Findings of EMNLP</em>, 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza, "<a className="inplace" href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank" rel="noopener noreferrer">UQA: Corpus for Urdu Question Answering</a>", in <em>LREC-COLING</em>, 2024.</li>
+            </ul>
+            <p>Preprints</p>
+            <hr />
+            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, "<a className="inplace" href="https://arxiv.org/abs/2505.13943" target="_blank" rel="noopener noreferrer">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://www.arxiv.org/abs/2410.12499" target="_blank" rel="noopener noreferrer">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://arxiv.org/abs/2409.11261" target="_blank" rel="noopener noreferrer">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
             </ul>
           </div>
         )}
@@ -150,8 +177,8 @@ function App() {
             <p>Research Grants</p>
             <hr />
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px' }}><b>OpenAI Research Access</b>, July 2024.</li>
-              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>OpenAI Research Access</b>, May 2024.</li>
+              <li style={{ marginLeft: '15px' }}><b>OpenAI Research Access</b>, for <em>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation. July 2024.</em></li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>OpenAI Research Access</b>, for <em>Generalists vs Specialists: Evaluating Large Language Models for Urdu. May 2024.</em></li>
             </ul>
           </div>
         )}
