@@ -1,224 +1,200 @@
+/* Personal Portfolio Styles
+Includes:
+- Morphing profile picture animation
+- Consistent academic typography (Roboto)
+- Responsive breakpoints for mobile/tablet
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Reset & Variables */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f0;
+}
 
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
   min-height: 100vh;
-  margin: 0;
+  width: 100%;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
+/* Page State: Transitioned to Top */
 .App.top {
   justify-content: flex-start;
+  padding-top: 40px;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
   width: 700px;
-  margin-top: 25px;
+  max-width: 90%;
   justify-content: center;
 }
 
-/* ================= TRANSITION / HEADER ================= */
-
+/* ================= HEADER / ANIMATION ================= */
 .transition-container {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 50px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 .transition-container.top {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .me-container {
   text-align: center;
+  transition: all 0.5s ease;
 }
 
 .me {
   width: 300px;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
 .me.shrink {
-  width: 100px;
+  width: 90px;
   margin-bottom: 0;
 }
 
-/* ================= NAV ================= */
-
+/* ================= NAVIGATION ================= */
 .nav-bar {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  font-size: 1.3em;
+  gap: 25px;
+  font-size: 1.25em;
   color: #008dbe;
   font-weight: 500;
   justify-content: center;
   align-items: center;
-}
-
-.nav-bar.top {
-  font-size: 1.2em;
+  transition: all 0.5s ease;
 }
 
 .nav-item {
-  font-family: 'Roboto', serif;
-  font-weight: 400;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
 }
 
-.nav-item.active,
+.nav-item.active {
+  color: #A00;
+  border-bottom: 2px solid #A00;
+}
+
 .nav-item:hover {
   color: #A00;
 }
 
-/* ================= ICON BUTTON ================= */
-
-.icon-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
 /* ================= SOCIAL ================= */
-
 .social-media-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .social-media-icons a,
 .social-media-icons button {
-  transition: transform 0.3s ease-in-out;
-  margin-right: 20px;
-}
-
-.social-media-icons a:hover,
-.social-media-icons button:hover {
-  transform: scale(1.1);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 0;
 }
 
 .social-media-icons img {
   height: 45px;
   width: 45px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
-/* ================= CONTENT ================= */
+.social-media-icons *:hover {
+  transform: scale(1.15);
+}
 
-/* Hidden by default */
-.about-page {
+/* ================= CONTENT AREA ================= */
+.content-area {
+  animation: fadeInSlide 0.6s forwards cubic-bezier(0.4, 0, 0.2, 1);
   text-align: justify;
-  text-justify: inter-word;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  color: #444;
+  line-height: 1.6;
 }
 
-/* Visible when React adds class */
-.about-page.visible {
-  opacity: 1;
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.about-page p,
-.about-page ul {
-  font-size: 1.15em;
-  line-height: 1.5;
-  color: #444444;
+/* Consistent Text Sizing */
+.content-area p,
+.content-area li {
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+}
+
+.content-area h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .inplace {
   color: #337ab7;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.inplace:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
 }
 
 /* ================= RESPONSIVE ================= */
-
 @media screen and (max-width: 768px) {
-  .app-container {
-    width: 90%;
-    margin-top: 15px;
-    align-items: center;
-  }
-
-  .transition-container {
-    margin-bottom: 0;
-  }
-
-  .me {
-    width: 250px;
-    margin-bottom: 40px;
-  }
-
-  .me.shrink {
-    width: 80px;
-  }
-
-  .nav-bar {
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 1em;
-  }
-
-  .social-media-icons {
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  .social-media-icons img {
-    height: 40px;
-    width: 40px;
-  }
-
-  .about-page {
-    padding: 0 10px;
-  }
-
-  .about-page p,
-  .about-page ul {
-    font-size: 1em;
-    line-height: 1.4;
-  }
+  .app-container { width: 90%; }
+  .nav-bar { font-size: 1.1em; gap: 15px; flex-wrap: wrap; }
+  .me { width: 220px; }
+  .me.shrink { width: 70px; }
+  .content-area p, .content-area li { font-size: 1em; }
 }
 
-@media screen and (max-width: 510px) {
-  .me {
-    width: 250px;
-    margin-bottom: -10px;
+@media screen and (max-width: 480px) {
+  .transition-container.top {
+    flex-direction: column;
+    gap: 15px;
   }
-
-  .me.shrink {
-    width: 70px;
-  }
-
-  .nav-bar {
-    margin-top: 50px;
-    gap: 10px;
-  }
-
-  .nav-item {
-    font-size: 0.9em;
-  }
-
-  .social-media-icons img {
-    height: 35px;
-    width: 35px;
-  }
-
-  .about-page p,
-  .about-page ul {
-    font-size: 0.9em;
-  }
+  .nav-bar { gap: 10px; }
+  .social-media-icons img { height: 35px; width: 35px; }
 }
