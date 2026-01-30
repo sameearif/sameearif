@@ -31,7 +31,11 @@ function App() {
       <div className="app-container">
         <div className={`transition-container ${isTopLayout ? "top" : ""}`}>
           <div className={`me-container ${isTopLayout ? "shrink" : ""}`}>
-            <img className={`me ${isTopLayout ? "shrink" : ""}`} src="me.png" alt="Profile" />
+            <img
+              className={`me ${isTopLayout ? "shrink" : ""}`}
+              src="me.png"
+              alt="Profile"
+            />
           </div>
 
           <div className={`nav-bar ${isTopLayout ? "top" : ""}`}>
@@ -45,13 +49,7 @@ function App() {
 
         {page === "home" && (
           <div className="social-media-icons">
-
-            {/* CV BUTTON — FIXED FOR A11Y */}
-            <button
-              onClick={openCV}
-              className="icon-button"
-              aria-label="Open CV"
-            >
+            <button onClick={openCV} className="icon-button" aria-label="Open CV">
               <img src="cv.png" alt="CV" />
             </button>
 
@@ -74,7 +72,7 @@ function App() {
         )}
 
         {page === "about" && (
-          <div className="about-page">
+          <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p>
               I am Samee Arif, a first-year Computer Science and Engineering Ph.D. student at the
               <a className="inplace" href="https://cse.engin.umich.edu/academics/graduate/graduate-programs/phd-in-cse/" target="_blank" rel="noopener noreferrer"> University of Michigan, Ann-Arbor</a>
