@@ -31,11 +31,7 @@ function App() {
       <div className="app-container">
         <div className={`transition-container ${isTopLayout ? "top" : ""}`}>
           <div className={`me-container ${isTopLayout ? "shrink" : ""}`}>
-            <img
-              className={`me ${isTopLayout ? "shrink" : ""}`}
-              src="me.png"
-              alt="Profile"
-            />
+            <img className={`me ${isTopLayout ? "shrink" : ""}`} src="me.png" alt="Profile" />
           </div>
 
           <div className={`nav-bar ${isTopLayout ? "top" : ""}`}>
@@ -49,11 +45,31 @@ function App() {
 
         {page === "home" && (
           <div className="social-media-icons">
-            <a onClick={openCV}><img src="cv.png" alt="CV" /></a>
-            <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer"><img src="github.png" alt="GitHub" /></a>
-            <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer"><img src="google-scholar.png" alt="Google Scholar" /></a>
-            <a className="blog-img" href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer"><img src="huggingface.png" alt="Hugging Face" /></a>
-            <a className="blog-img" href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer"><img src="dumplings.png" alt="Hugging Face" /></a>
+
+            {/* CV BUTTON — FIXED FOR A11Y */}
+            <button
+              onClick={openCV}
+              className="icon-button"
+              aria-label="Open CV"
+            >
+              <img src="cv.png" alt="CV" />
+            </button>
+
+            <a href="https://github.com/sameearif" target="_blank" rel="noopener noreferrer">
+              <img src="github.png" alt="GitHub" />
+            </a>
+
+            <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer">
+              <img src="google-scholar.png" alt="Google Scholar" />
+            </a>
+
+            <a className="blog-img" href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer">
+              <img src="huggingface.png" alt="Hugging Face" />
+            </a>
+
+            <a className="blog-img" href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer">
+              <img src="dumplings.png" alt="Hugging Face" />
+            </a>
           </div>
         )}
 
@@ -83,49 +99,6 @@ function App() {
               When free, I create digital art, listen to Urdu music, read books, and play
               <a className="inplace" href="https://zelda.nintendo.com/breath-of-the-wild/" target="_blank" rel="noopener noreferrer"> The Legend of Zelda: Breath of The Wild</a>.
             </p>
-          </div>
-        )}
-
-        {page === "experience" && (
-          <div className="about-page">
-            <p style={{ fontSize: '1.25em' }}>Research</p>
-            <hr style={{ marginTop: '-15px' }} />
-            <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
-              <li>Research Associate (CSaLT)</li>
-              <li>Research Assistant (CSaLT)</li>
-            </ul>
-            <p style={{ marginTop: '-15px', fontSize: '1em' }}>
-              I mentored and led 30+ students at
-              <a className="inplace" href="https://www.c-salt.org/" target="_blank" rel="noopener noreferrer"> Center for Speech and Language Technologies</a> (CSaLT),
-              a research lab at Lahore University of Management Sciences.
-            </p>
-          </div>
-        )}
-
-        {page === "publications" && (
-          <div className="about-page">
-            <p>Artificial Intelligence / Machine Learning / Natural Language Processing</p>
-            <hr />
-            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px' }}>
-                <b>Samee Arif</b>*, Sualeha Farid*, Abdul Hameed Azeemi, Awais Athar, Agha Ali Raza,
-                "<a className="inplace" href="https://aclanthology.org/2025.gem-1.4/" target="_blank" rel="noopener noreferrer">
-                  The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation
-                </a>"
-              </li>
-            </ul>
-          </div>
-        )}
-
-        {page === "grants" && (
-          <div className="about-page">
-            <p>Research Grants</p>
-            <hr />
-            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px' }}>
-                <b>OpenAI Research Access</b>, for <em>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation. July 2024.</em>
-              </li>
-            </ul>
           </div>
         )}
 
