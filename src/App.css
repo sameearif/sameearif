@@ -1,11 +1,11 @@
 /* Personal Portfolio Styles
 Includes:
 - Morphing profile picture animation
-- Consistent academic typography (Roboto)
+- Modern academic typography (Inter)
 - Responsive breakpoints for mobile/tablet
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Base Reset & Variables */
 body, html {
@@ -22,7 +22,7 @@ body, html {
   min-height: 100vh;
   width: 100%;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: all 0.5s ease-in-out;
 }
 
@@ -82,12 +82,13 @@ body, html {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  font-size: 1.25em;
+  font-size: 1.2em;
   color: #008dbe;
   font-weight: 500;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .nav-item {
@@ -95,6 +96,7 @@ body, html {
   transition: all 0.2s ease;
   padding: 5px 0;
   border-bottom: 2px solid transparent;
+  font-weight: 500;
 }
 
 .nav-item.active {
@@ -137,8 +139,8 @@ body, html {
 .content-area {
   animation: fadeInSlide 0.6s forwards cubic-bezier(0.4, 0, 0.2, 1);
   text-align: justify;
-  color: #444;
-  line-height: 1.6;
+  color: #333; /* Slightly darker for Inter contrast */
+  line-height: 1.8; 
 }
 
 @keyframes fadeInSlide {
@@ -149,18 +151,20 @@ body, html {
 /* Consistent Text Sizing */
 .content-area p,
 .content-area li {
-  font-size: 1.1em;
-  margin-bottom: 1.2em;
+  font-size: 1.05em;
+  margin-bottom: 1.4em;
+  font-weight: 400;
 }
 
 .content-area h3 {
-  font-size: 1.4em;
-  color: #333;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  color: #111;
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
   font-weight: 600;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
+  letter-spacing: -0.01em;
 }
 
 .inplace {
@@ -183,18 +187,37 @@ hr {
 
 /* ================= RESPONSIVE ================= */
 @media screen and (max-width: 768px) {
-  .app-container { width: 90%; }
-  .nav-bar { font-size: 1.1em; gap: 15px; flex-wrap: wrap; }
+  .app-container { width: 95%; }
+  .nav-bar { 
+    font-size: 0.95em; 
+    gap: 12px; 
+  }
   .me { width: 220px; }
   .me.shrink { width: 70px; }
-  .content-area p, .content-area li { font-size: 1em; }
+  .content-area p, .content-area li { 
+    font-size: 0.95em; 
+    line-height: 1.7;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .transition-container.top {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
   }
-  .nav-bar { gap: 10px; }
+  .nav-bar { 
+    font-size: 0.8em; 
+    gap: 8px; 
+    width: 100%;
+    justify-content: center;
+  }
   .social-media-icons img { height: 35px; width: 35px; }
+}
+
+@media screen and (max-width: 360px) {
+  .nav-bar {
+    font-size: 0.7em;
+    gap: 6px;
+  }
 }
