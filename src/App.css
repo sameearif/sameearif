@@ -73,6 +73,14 @@
   align-items: center;
 }
 
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
 .nav-item {
   font-family: 'Roboto', serif;
   font-optical-sizing: auto;
