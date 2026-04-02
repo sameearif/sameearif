@@ -97,12 +97,6 @@ function App() {
             </p>
 
             <p>
-              Currently I am working on using LLM Jailbreaking techniques to investigate the phenomenon of "Shallow Safety Alignment". 
-              My research focuses on demonstrating how current safety mechanisms can be bypassed through "Prefilling Attacks". 
-              I am actively developing novel training objectives to create models that remain robust even when initial refusal barriers are breached.
-            </p>
-
-            <p>
               When free, I paint using watercolors, create digital art, listen to Urdu music, write 
               <a className="inplace" href="https://dumplings.sameearif.com/" target="_blank" rel="noopener noreferrer"> NLP blog</a>, 
               work on my <a className="inplace" href="https://www.stardewvalley.net/" target="_blank" rel="noopener noreferrer">Stardew Valley</a>-inspired game, and play
@@ -117,16 +111,21 @@ function App() {
           <div className={`about-page ${isTopLayout ? "visible" : ""}`}>
             <p style={{ fontSize: '1.25em' }}>Research</p>
             <hr style={{ marginTop: '-15px' }} />
+
             <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
-              <li>Research Associate (CSaLT)</li>
-              <li>Research Assistant (CSaLT)</li>
+              <li>Research Assistant (<a className="inplace" href="https://lit.eecs.umich.edu/index.html" target="_blank" rel="noopener noreferrer">{' '}LIT@UMich</a>)</li>
+              <li>Graduate Research Assistant (LIT@UMich)</li>
             </ul>
             <p style={{ marginTop: '-15px', fontSize: '1em' }}>
-              I mentored and led 30+ students at
-              <a className="inplace" href="https://www.c-salt.org/" target="_blank" rel="noopener noreferrer">
-                {' '}Center for Speech and Language Technologies
-              </a>
-              (CSaLT). I first authored six research papers, including three published at EMNLP, COLING, and LREC.
+              Conducting research in AI Safety, focusing on LLM jailbreaking vulnerabilities, child-oriented safety evaluation, cultural reasoning via structured Cultural Tree representations, and human-in-the-loop therapeutic LLM systems.
+            </p>
+
+            <ul style={{ listStyleType: 'square', marginTop: '0px', fontSize: '1em' }}>
+              <li>Research Associate (<a className="inplace" href="https://www.c-salt.org/" target="_blank" rel="noopener noreferrer">{' '}CSaLT@LUMS</a>)</li>
+              <li>Research Assistant (CSaLT@LUMS)</li>
+            </ul>
+            <p style={{ marginTop: '-15px', fontSize: '1em' }}>
+              I mentored and led 30+ students at Center for Speech and Language Technologies (CSaLT). I first authored six research papers, including three published at EMNLP, COLING, and LREC.
             </p>
 
             <p style={{ fontSize: '1.25em' }}>Teaching</p>
@@ -161,13 +160,16 @@ function App() {
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Aamina Jamal Khan, Mustafa Abbas, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://aclanthology.org/2025.coling-main.397/" target="_blank" rel="noopener noreferrer">WER We Stand: Benchmarking Urdu ASR Models</a>", in <em>COLING</em>, 2025.</li>
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Abdul Hameed Azeemi, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://aclanthology.org/2024.findings-emnlp.426/" target="_blank" rel="noopener noreferrer">Generalists vs. Specialists: Evaluating Large Language Models for Urdu</a>", in <em>Findings of EMNLP</em>, 2024.</li>
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Sualeha Farid, Awais Athar, Agha Ali Raza, "<a className="inplace" href="https://aclanthology.org/2024.lrec-main.1497/" target="_blank" rel="noopener noreferrer">UQA: Corpus for Urdu Question Answering</a>", in <em>LREC-COLING</em>, 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Muhammad Saad Haroon, Aamina Jamal Khan, Taimoor Arif Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://arxiv.org/abs/2409.11261" target="_blank" rel="noopener noreferrer">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>", in <em>SRW EACL 2026</em>.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, "<a className="inplace" href="https://arxiv.org/abs/2505.13943" target="_blank" rel="noopener noreferrer">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>"in <em>LREC 2026</em>.</li>
             </ul>
             <p>Preprints</p>
             <hr />
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>*, Sualeha Farid*, "<a className="inplace" href="https://arxiv.org/abs/2505.13943" target="_blank" rel="noopener noreferrer">Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR</a>". 2025.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Naihao Deng, Zhijin Jin, Rada Mihalcea, "<a className="inplace" href="https://drive.google.com/file/d/1BS_0GyaHv6hJsD3kQvENG8rGpu7CSjWM/view" target="_blank" rel="noopener noreferrer">One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety</a>". 2026.</li>
+            </ul>
+            <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://www.arxiv.org/abs/2410.12499" target="_blank" rel="noopener noreferrer">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
-              <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Taimoor Arif, Muhammad Saad Haroon, Aamina Jamal Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://arxiv.org/abs/2409.11261" target="_blank" rel="noopener noreferrer">The Art of Storytelling: Multi-Agent Generative AI for Dynamic Multimodal Narratives</a>". 2024.</li>
             </ul>
           </div>
         )}
