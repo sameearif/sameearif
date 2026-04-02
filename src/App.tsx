@@ -169,7 +169,7 @@ function App() {
               <li style={{ marginLeft: '15px', marginTop: '15px' }}><b>Samee Arif</b>, Naihao Deng, Zhijing Jin, Rada Mihalcea, "<a className="inplace" href="https://drive.google.com/file/d/1BS_0GyaHv6hJsD3kQvENG8rGpu7CSjWM/view" target="_blank" rel="noopener noreferrer">One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety</a>". 2026.</li>
             </ul>
             <ul style={{ listStyleType: 'square', padding: 0, fontSize: '1em' }}>
-              <li style={{ marginLeft: '15px', marginTop: '15px', , marginBottom: '50px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://www.arxiv.org/abs/2410.12499" target="_blank" rel="noopener noreferrer">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
+              <li style={{ marginLeft: '15px', marginTop: '15px', marginBottom: '50px' }}><b>Samee Arif</b>, Zohaib Khan, Agha Ali Raza, Awais Athar, "<a className="inplace" href="https://www.arxiv.org/abs/2410.12499" target="_blank" rel="noopener noreferrer">With a Grain of SALT: Are LLMs Fair Across Social Dimensions?</a>". 2024.</li>
             </ul>
           </div>
         )}
