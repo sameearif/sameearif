@@ -85,7 +85,7 @@ const PREPRINTS: Publication[] = [
   {
     id: 'one-word',
     title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
-    href: 'https://drive.google.com/file/d/1BS_0GyaHv6hJsD3kQvENG8rGpu7CSjWM/view',
+    href: 'https://arxiv.org/abs/2604.25921',
     year: '2026',
     authors: (<><b>S. Arif</b>, N. Deng, Z. Jin, R. Mihalcea</>),
     figure: 'incremental_completion_decomposition.png',
