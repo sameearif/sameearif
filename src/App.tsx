@@ -44,7 +44,7 @@ const PEER_REVIEWED: Publication[] = [
     title: 'With a Grain of SALT: Are LLMs Fair Across Social Dimensions?',
     href: 'https://arxiv.org/abs/2410.12499',
     year: 'TrustNLP ACL 2026',
-    authors: (<><b>S. Arif</b>, Z. Khan, A. A. Raza, A. Athar</>),
+    authors: (<><b>S. Arif</b>*, Z. Khan*, A. A. Raza, A. Athar</>),
     figure: 'with_a_grain_of_salt.png',
   },
   {
