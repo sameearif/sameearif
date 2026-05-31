@@ -28,7 +28,7 @@ const PEER_REVIEWED: Publication[] = [
     title: 'Kahaani: A Multimodal Co-Creative Storytelling System',
     href: 'https://aclanthology.org/2026.eacl-srw.25/',
     year: 'EACL SRW 2026',
-    authors: (<><b>S. Arif</b>, M. S. Haroon, A. J. Khan, T. Arif, A. A. Raza, A. Athar</>),
+    authors: (<><b>S. Arif</b>, M. S. Haroon*, A. J. Khan*, T. Arif, A. A. Raza, A. Athar</>),
     figure: 'kahaani.png',
   },
   {
@@ -60,7 +60,7 @@ const PEER_REVIEWED: Publication[] = [
     title: 'WER We Stand: Benchmarking Urdu ASR Models',
     href: 'https://aclanthology.org/2025.coling-main.397/',
     year: 'COLING 2025',
-    authors: (<><b>S. Arif</b>, A. J. Khan, M. Abbas, A. A. Raza, A. Athar</>),
+    authors: (<><b>S. Arif</b>, A. J. Khan*, M. Abbas*, A. A. Raza, A. Athar</>),
     figure: 'wer_we_stand.png',
   },
   {
