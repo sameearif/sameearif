@@ -19,6 +19,7 @@ body{
   min-height:100vh;
 }
 ::selection{background:rgba(138,90,54,.16)}
+[lang="ur"]{font-family:'Noto Naskh Arabic','Geeza Pro',serif}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 
 .topline{display:flex;justify-content:space-between;align-items:center;
