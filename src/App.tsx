@@ -24,12 +24,12 @@ type Publication = {
 
 const PEER_REVIEWED: Publication[] = [
   {
-    id: 'kahaani',
-    title: 'Kahaani: A Multimodal Co-Creative Storytelling System',
-    href: 'https://aclanthology.org/2026.eacl-srw.25/',
-    year: 'EACL SRW 2026',
-    authors: (<><b>S. Arif</b>, M. S. Haroon*, A. J. Khan*, T. Arif, A. A. Raza, A. Athar</>),
-    figure: 'kahaani.png',
+    id: 'salt',
+    title: 'With a Grain of SALT: Are LLMs Fair Across Social Dimensions?',
+    href: 'https://arxiv.org/abs/2410.12499',
+    year: 'TrustNLP ACL 2026',
+    authors: (<><b>S. Arif</b>*, Z. Khan*, A. A. Raza, A. Athar</>),
+    figure: 'with_a_grain_of_salt.png',
   },
   {
     id: 'every-pixel',
@@ -40,12 +40,12 @@ const PEER_REVIEWED: Publication[] = [
     figure: 'press_to_pixels.png',
   },
   {
-    id: 'salt',
-    title: 'With a Grain of SALT: Are LLMs Fair Across Social Dimensions?',
-    href: 'https://arxiv.org/abs/2410.12499',
-    year: 'TrustNLP ACL 2026',
-    authors: (<><b>S. Arif</b>*, Z. Khan*, A. A. Raza, A. Athar</>),
-    figure: 'with_a_grain_of_salt.png',
+    id: 'kahaani',
+    title: 'Kahaani: A Multimodal Co-Creative Storytelling System',
+    href: 'https://aclanthology.org/2026.eacl-srw.25/',
+    year: 'EACL SRW 2026',
+    authors: (<><b>S. Arif</b>, M. S. Haroon*, A. J. Khan*, T. Arif, A. A. Raza, A. Athar</>),
+    figure: 'kahaani.png',
   },
   {
     id: 'fellowship',
