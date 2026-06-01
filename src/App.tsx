@@ -175,13 +175,21 @@ function App() {
   return (
     <div className="wrap">
       <div className="topline">
-        <span lang="ur" dir="rtl" style={{ fontSize: 19 }}>سمیع عارف</span>
+        <button
+          type="button"
+          className="namelink"
+          lang="ur"
+          dir="rtl"
+          style={{ fontSize: 19 }}
+          onClick={() => handleTab('home')}
+          aria-label="Home"
+        >سمیع عارف</button>
         <span className="loc"><span className="dot"></span> Ann Arbor, Michigan</span>
       </div>
 
       <header>
         <div className="eyebrow">Ph.D. Student · University of Michigan · Computer Science &amp; Engineering</div>
-        <h1>Samee Arif</h1>
+        <h1><button type="button" className="namelink" onClick={() => handleTab('home')} aria-label="Home">Samee Arif</button></h1>
         <a className="topmail" href="mailto:asamee@umich.edu">asamee@umich.edu</a>
         <p className="tagline">On the <em>safety</em>, <em>explainability</em>, and <em>reasoning</em> of large language models.</p>
       </header>

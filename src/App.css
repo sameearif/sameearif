@@ -37,6 +37,9 @@ header h1{font-weight:300;font-size:clamp(46px,8vw,76px);line-height:1.02;letter
 header .tagline{margin:22px auto 0;font-size:clamp(20px,2.6vw,25px);color:var(--soft);line-height:1.5;max-width:30ch}
 .topmail{display:inline-block;margin-top:14px;font-family:var(--sans);font-size:14px;letter-spacing:.01em;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(138,90,54,.28);transition:border-color .2s}
 .topmail:hover{border-color:var(--accent)}
+.namelink{appearance:none;background:none;border:none;padding:0;margin:0;font:inherit;color:inherit;letter-spacing:inherit;line-height:inherit;cursor:pointer;transition:color .2s}
+.namelink:hover{color:var(--accent)}
+.namelink:focus-visible{outline:1px solid var(--accent);outline-offset:3px;border-radius:2px}
 header .tagline em{font-style:italic;color:var(--ink)}
 
 .tabs{display:flex;gap:28px;border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:14px;position:sticky;top:0;background:var(--paper);z-index:5;padding-top:6px}
