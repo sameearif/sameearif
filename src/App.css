@@ -10,7 +10,11 @@
   --maxw:720px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{overflow-y:scroll;scrollbar-gutter:stable}
+html{overflow-y:scroll;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:rgba(138,90,54,.28) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(138,90,54,.28);border-radius:10px;border:2px solid var(--paper)}
+::-webkit-scrollbar-thumb:hover{background:rgba(138,90,54,.45)}
 body{
   background:var(--paper);color:var(--ink);
   font-family:var(--serif);font-weight:300;
