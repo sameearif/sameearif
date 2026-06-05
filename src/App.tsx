@@ -228,8 +228,8 @@ function App() {
                 <a href="https://scholar.google.com/citations?hl=en&user=Jjf8EVoAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2z"/><path d="M5 12.27V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.73l-7 3.82-7-3.82z"/></svg>
                 </a>
-                <a className="hf" href="https://huggingface.co/sameearif" target="_blank" rel="noopener noreferrer" title="Hugging Face" aria-label="Hugging Face">
-                  <img src="huggingface_icon.png" alt="Hugging Face" />
+                <a className="hf" href="http://chaistains.sameearif.com/" target="_blank" rel="noopener noreferrer" title="Chai Stains" aria-label="Chai Stains">
+                  <img src="chai_logo.png" alt="Chai Stains" />
                 </a>
                 <a href="https://dumplings.sameearif.com" target="_blank" rel="noopener noreferrer" title="NLP Blog — Dumplings" aria-label="NLP Blog">
                   <img src="dumplings_icon.png" alt="NLP Blog" />
