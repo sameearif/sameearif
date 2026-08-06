@@ -24,6 +24,14 @@ type Publication = {
 
 const PEER_REVIEWED: Publication[] = [
   {
+    id: 'one-word',
+    title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
+    href: 'https://arxiv.org/abs/2604.25921',
+    year: 'COLM 2026',
+    authors: (<><b>S. Arif</b>, N. Deng, Z. Jin, R. Mihalcea</>),
+    figure: 'incremental_completion_decomposition.png',
+  },
+  {
     id: 'salt',
     title: 'With a Grain of SALT: Are LLMs Fair Across Social Dimensions?',
     href: 'https://arxiv.org/abs/2410.12499',
@@ -82,14 +90,6 @@ const PEER_REVIEWED: Publication[] = [
 ];
 
 const PREPRINTS: Publication[] = [
-  {
-    id: 'one-word',
-    title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
-    href: 'https://arxiv.org/abs/2604.25921',
-    year: '2026',
-    authors: (<><b>S. Arif</b>, N. Deng, Z. Jin, R. Mihalcea</>),
-    figure: 'incremental_completion_decomposition.png',
-  },
   {
     id: 'age-of-curiosity',
     title: 'The Age of Curiosity Meets the Age of AI: Benchmarking Child Safety in Large Language Models',
@@ -315,6 +315,7 @@ function App() {
           <div className="block">
             <h3>Research Grants</h3>
             <div className="bar"></div>
+            <div className="row"><div className="main"><div className="title">Thinking Machines Research Grant</div><div className="sub">For <em>LLM Safety Against Fine-Tuning and Representation Tampering</em></div></div><div className="when">Aug 2026</div></div>
             <div className="row"><div className="main"><div className="title">VESSL AI Compute Grant</div><div className="sub">For <em>The Age of Curiosity Meets the Age of AI: Benchmarking Child Safety in Large Language Models</em></div></div><div className="when">May 2026</div></div>
             <div className="row"><div className="main"><div className="title">OpenAI Research Access</div><div className="sub">For <em>The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation</em></div></div><div className="when">July 2024</div></div>
             <div className="row"><div className="main"><div className="title">OpenAI Research Access</div><div className="sub">For <em>Generalists vs. Specialists: Evaluating Large Language Models for Urdu</em></div></div><div className="when">May 2024</div></div>
