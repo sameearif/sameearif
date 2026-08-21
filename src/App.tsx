@@ -24,6 +24,14 @@ type Publication = {
 
 const PEER_REVIEWED: Publication[] = [
   {
+    id: 'age-of-curiosity',
+    title: 'The Age of Curiosity Meets the Age of AI: Benchmarking Child Safety in Large Language Models',
+    href: 'https://arxiv.org/abs/2605.25510',
+    year: 'EMNLP 2026',
+    authors: (<><b>S. Arif</b>, A. Borah, R. Mihalcea</>),
+    figure: 'age_of_curiosity.png',
+  },
+  {
     id: 'one-word',
     title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
     href: 'https://arxiv.org/abs/2604.25921',
@@ -90,14 +98,6 @@ const PEER_REVIEWED: Publication[] = [
 ];
 
 const PREPRINTS: Publication[] = [
-  {
-    id: 'age-of-curiosity',
-    title: 'The Age of Curiosity Meets the Age of AI: Benchmarking Child Safety in Large Language Models',
-    href: 'https://arxiv.org/abs/2605.25510',
-    year: '2026',
-    authors: (<><b>S. Arif</b>, A. Borah, R. Mihalcea</>),
-    figure: 'age_of_curiosity.png',
-  },
 ];
 
 function PublicationItem({
