@@ -32,6 +32,14 @@ const PEER_REVIEWED: Publication[] = [
     figure: 'age_of_curiosity.png',
   },
   {
+    id: 'one-example-is-enough',
+    title: 'One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs',
+    href: 'https://arxiv.org/abs/2609.14860',
+    year: 'EMNLP 2026',
+    authors: (<>N. Deng, <b>S. Arif</b>, S. Chang, Y. Chen, R. Mihalcea</>),
+    figure: 'one-example-is-enough.png',
+  },
+  {
     id: 'one-word',
     title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
     href: 'https://arxiv.org/abs/2604.25921',
@@ -240,7 +248,7 @@ function App() {
         </section>
 
         <section className={`panel${activeTab === 'about' ? ' active' : ''}`} id="about" role="tabpanel">
-          <p className="lead">I am Samee Arif, a first-year Computer Science &amp; Engineering Ph.D. student at the <a href="https://cse.engin.umich.edu/academics/graduate/graduate-programs/phd-in-cse/" target="_blank" rel="noopener noreferrer">University of Michigan, Ann Arbor</a>, advised by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank" rel="noopener noreferrer">Prof. Rada Mihalcea</a>. My research is in <strong style={{ fontWeight: 500 }}>natural language processing</strong> — specifically <em>AI safety</em>, <em>explainability</em>, and <em>LLM reasoning</em>.</p>
+          <p className="lead">I am Samee Arif, a second-year Computer Science &amp; Engineering Ph.D. student at the <a href="https://cse.engin.umich.edu/academics/graduate/graduate-programs/phd-in-cse/" target="_blank" rel="noopener noreferrer">University of Michigan, Ann Arbor</a>, advised by <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank" rel="noopener noreferrer">Prof. Rada Mihalcea</a>. My research is in <strong style={{ fontWeight: 500 }}>natural language processing</strong> — specifically <em>AI safety</em>, <em>explainability</em>, and <em>LLM reasoning</em>.</p>
           <p>I completed my B.S. in Computer Science in 2023 from the <a href="https://www.lums.edu.pk/" target="_blank" rel="noopener noreferrer">Lahore University of Management Sciences</a> (LUMS). I have worked under the supervision of <a href="https://aghaaliraza.com/" target="_blank" rel="noopener noreferrer">Dr. Agha Ali Raza</a> and <a href="https://cl.awaisathar.com/" target="_blank" rel="noopener noreferrer">Dr. Awais Athar</a>. I also have the privilege of collaborating with <a href="https://www.ihsanqazi.com/" target="_blank" rel="noopener noreferrer">Dr. Ihsan Ayyub Qazi</a> and <a href="https://web.lums.edu.pk/~zafar/" target="_blank" rel="noopener noreferrer">Dr. Zafar Ayyub Qazi</a>.</p>
           <p>When free, I paint using watercolors, create digital art, listen to Urdu music, write a <a href="https://dumplings.sameearif.com/" target="_blank" rel="noopener noreferrer">blog</a>, and play <a href="https://zelda.nintendo.com/breath-of-the-wild/" target="_blank" rel="noopener noreferrer">The Legend of Zelda: Breath of the Wild</a>.</p>
         </section>
