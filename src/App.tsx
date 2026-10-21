@@ -42,7 +42,7 @@ const PEER_REVIEWED: Publication[] = [
   {
     id: 'one-word',
     title: 'One Word at a Time: Incremental Completion Decomposition Breaks LLM Safety',
-    href: 'https://arxiv.org/abs/2604.25921',
+    href: 'https://openreview.net/forum?id=LZSSM0GiXu',
     year: 'COLM 2026',
     authors: (<><b>S. Arif</b>, N. Deng, Z. Jin, R. Mihalcea</>),
     figure: 'incremental_completion_decomposition.png',
@@ -50,7 +50,7 @@ const PEER_REVIEWED: Publication[] = [
   {
     id: 'salt',
     title: 'With a Grain of SALT: Are LLMs Fair Across Social Dimensions?',
-    href: 'https://arxiv.org/abs/2410.12499',
+    href: 'https://aclanthology.org/2026.trustnlp-main.48/',
     year: 'TrustNLP ACL 2026',
     authors: (<><b>S. Arif</b>*, Z. Khan*, A. A. Raza, A. Athar</>),
     figure: 'with_a_grain_of_salt.png',
@@ -58,7 +58,7 @@ const PEER_REVIEWED: Publication[] = [
   {
     id: 'every-pixel',
     title: 'Every Pixel Tells a Story: End-to-End Urdu Newspaper OCR',
-    href: 'https://lrec.elra.info/lrec2026-main-235',
+    href: 'https://aclanthology.org/2026.lrec-1.235/',
     year: 'LREC 2026',
     authors: (<><b>S. Arif</b>*, S. Farid*</>),
     figure: 'press_to_pixels.png',
