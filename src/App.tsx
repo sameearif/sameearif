@@ -106,6 +106,14 @@ const PEER_REVIEWED: Publication[] = [
 ];
 
 const PREPRINTS: Publication[] = [
+  {
+    id: 'culture-within',
+    title: 'The Culture Within: Towards Mechanistic Understanding of Cultural Reasoning in LLMs',
+    href: 'https://arxiv.org/abs/2610.27202',
+    year: '2026',
+    authors: (<><b>S. Arif</b>, F. Danisman, A. Borah, H. Lee, D. Kong, L. Logeswaran, M. Lee, Z. Jin, R. Mihalcea</>),
+    figure: 'culture_within.png',
+  },
 ];
 
 function PublicationItem({
